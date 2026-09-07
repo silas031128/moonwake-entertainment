@@ -1279,6 +1279,13 @@ footer {
     text-shadow: 0 0 25px rgba(100, 130, 255, 0.12);
 }
 
+.moonwake-logo {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
 /* Moonwake Feedback */
 
 .feedback-page {
@@ -1426,4 +1433,627 @@ footer {
 
     font-size: 12px;
     letter-spacing: 1px;
+}
+
+/* Moonwake Footer */
+
+.moonwake-footer {
+    margin-top: 80px;
+    padding: 45px 20px 35px;
+
+    border-top: 1px solid #252f4c;
+
+    text-align: center;
+}
+
+.footer-logo {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    margin-bottom: 15px;
+
+    filter: drop-shadow(0 0 10px rgba(255, 220, 70, 0.25));
+}
+
+.footer-name {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.footer-tagline {
+    margin: 0 0 18px;
+
+    color: #8c98bd;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.footer-copyright {
+    margin: 0;
+
+    color: #687494;
+
+    font-size: 11px;
+}
+/* Moonwake Brand Accent */
+
+button:hover {
+    border-color: #8b5cf6;
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.18);
+}
+
+button:active {
+    border-color: #ffe14a;
+    box-shadow: 0 0 12px rgba(255, 225, 74, 0.15);
+}
+
+/* Featured Project - Moonwake Brand Accent */
+
+.featured-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-card::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 3px;
+
+    background: linear-gradient(
+        to bottom,
+        #8b5cf6,
+        #ffe14a
+    );
+
+    box-shadow: 0 0 12px rgba(139, 92, 246, 0.18);
+}
+
+/* Moonwake Header - Logo Accent */
+
+.moonwake-logo {
+    filter:
+        drop-shadow(0 0 8px rgba(139, 92, 246, 0.22))
+        drop-shadow(0 0 14px rgba(255, 225, 74, 0.10));
+}
+
+/* Moonwake Title - Brand Glow */
+
+.home-header h1 {
+    text-shadow:
+        0 0 10px rgba(139, 92, 246, 0.18),
+        0 0 18px rgba(255, 225, 74, 0.08);
+}
+
+/* Moonwake Status Accents */
+
+.home-project-status,
+.home-status-panel {
+    border-left: 3px solid #8b5cf6;
+    box-shadow: -4px 0 12px rgba(139, 92, 246, 0.10);
+}
+
+.home-project-status strong,
+.home-status-panel strong {
+    color: #ffe14a;
+}
+
+/* Moonwake Link Polish */
+
+a {
+    transition:
+        color 0.2s ease,
+        text-shadow 0.2s ease;
+}
+
+a:hover {
+    color: #a78bfa;
+    text-shadow: 0 0 8px rgba(139, 92, 246, 0.22);
+}
+
+/* Northreach project page */
+
+.project-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.project-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    margin-bottom: 18px;
+
+    filter:
+        drop-shadow(0 0 8px rgba(139, 92, 246, 0.22))
+        drop-shadow(0 0 14px rgba(255, 225, 74, 0.10));
+}
+
+.project-header h1 {
+    margin: 0 0 10px;
+
+    font-size: 48px;
+    letter-spacing: 7px;
+
+    text-shadow:
+        0 0 10px rgba(139, 92, 246, 0.18),
+        0 0 18px rgba(255, 225, 74, 0.08);
+}
+
+.project-header h2 {
+    margin: 0 0 25px;
+
+    color: #8c98bd;
+
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+
+.project-status {
+    display: inline-block;
+
+    margin: 0;
+    padding: 8px 16px;
+
+    border: 1px solid #8b5cf6;
+    border-left: 3px solid #ffe14a;
+
+    background-color: #11182c;
+
+    color: #ffe14a;
+
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 0 12px rgba(139, 92, 246, 0.10);
+}
+
+
+/* Main content */
+
+.project-page {
+    width: 90%;
+    max-width: 1000px;
+
+    margin: 0 auto;
+}
+
+
+/* Sections */
+
+.project-section {
+    position: relative;
+
+    margin-bottom: 45px;
+    padding: 30px;
+
+    background-color: #11182c;
+
+    border: 1px solid #39466b;
+    border-left: 3px solid #8b5cf6;
+
+    text-align: left;
+
+    box-shadow:
+        0 0 18px rgba(40, 60, 120, 0.08);
+}
+
+.project-section::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        to right,
+        #8b5cf6,
+        #ffe14a,
+        transparent
+    );
+}
+
+.project-section h2 {
+    margin: 0 0 20px;
+
+    color: white;
+
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.project-section h2::before {
+    content: "// ";
+
+    color: #8b5cf6;
+}
+
+.project-section p {
+    margin: 0 0 18px;
+
+    color: #8c98bd;
+
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.project-section p:last-child {
+    margin-bottom: 0;
+}
+
+.project-section strong {
+    color: #ffe14a;
+}
+
+
+/* Feature grid */
+
+.project-feature-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.project-feature {
+    padding: 22px;
+
+    background-color: #0a0f1d;
+
+    border: 1px solid #252f4c;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.project-feature:hover {
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 0 14px rgba(139, 92, 246, 0.10);
+
+    transform: translateY(-2px);
+}
+
+.project-feature h3 {
+    margin: 0 0 10px;
+
+    color: #ffe14a;
+
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.project-feature p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* Project log */
+
+.project-log {
+    padding: 18px;
+
+    background-color: #0a0f1d;
+
+    border: 1px solid #252f4c;
+}
+
+.project-log p {
+    margin: 0;
+}
+
+.project-log span {
+    margin-right: 12px;
+
+    color: #ffe14a;
+
+    font-weight: bold;
+}
+
+
+/* Back button */
+
+.project-back-button {
+    display: inline-block;
+
+    margin: 10px 0 60px;
+    padding: 12px 20px;
+
+    background-color: #151d35;
+
+    border: 1px solid #39466b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-back-button:hover {
+    color: #a78bfa;
+
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.18);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .project-header h1 {
+        font-size: 34px;
+        letter-spacing: 4px;
+    }
+
+    .project-header h2 {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .project-section {
+        padding: 22px;
+    }
+
+    .project-feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Northreach Project Roadmap */
+
+.project-roadmap {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.roadmap-step {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 20px;
+    padding: 22px;
+    background-color: #0a0f1d;
+    border: 1px solid #252f4c;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.roadmap-step:hover {
+    border-color: #8b5cf6;
+    box-shadow:
+        0 0 14px rgba(139, 92, 246, 0.10);
+    transform: translateX(3px);
+}
+
+.roadmap-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 70px;
+    height: 70px;
+
+    background-color: #11182c;
+    border: 1px solid #8b5cf6;
+
+    color: #ffe14a;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    box-shadow:
+        0 0 12px rgba(139, 92, 246, 0.10);
+}
+
+.roadmap-content h3 {
+    margin: 0 0 8px;
+
+    color: #ffe14a;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.roadmap-content p {
+    margin: 0 0 12px;
+    color: #8c98bd;
+    font-size: 13px;
+}
+
+.roadmap-content ul {
+    margin: 0;
+    padding-left: 20px;
+    color: #8c98bd;
+}
+
+.roadmap-content li {
+    margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.roadmap-content li::marker {
+    color: #8b5cf6;
+}
+
+@media (max-width: 700px) {
+
+    .roadmap-step {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .roadmap-number {
+        width: 55px;
+        height: 55px;
+        font-size: 15px;
+    }
+
+}
+
+/* Featured Northreach Project*/
+
+.featured-project {
+    position: relative;
+    margin-bottom: 45px;
+    padding: 35px;
+    background-color: #11182c;
+    border: 1px solid #39466b;
+    border-left: 3px solid #8b5cf6;
+    overflow: hidden;
+
+    box-shadow:
+        0 0 20px rgba(139, 92, 246, 0.08);
+}
+
+.featured-project::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+
+    background: linear-gradient(
+        to right,
+        #8b5cf6,
+        #ffe14a,
+        transparent
+    );
+}
+
+.featured-project-label {
+    margin-bottom: 12px;
+    color: #ffe14a;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.featured-project-code {
+    margin-bottom: 8px;
+    color: #687494;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.featured-project h2 {
+    margin: 0 0 6px;
+    color: white;
+    font-size: 32px;
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 10px rgba(139, 92, 246, 0.18);
+}
+
+.featured-project-subtitle {
+    margin: 0 0 20px;
+    color: #8c98bd;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.featured-project .status {
+    display: inline-block;
+    margin-bottom: 18px;
+}
+
+.featured-project .project-type {
+    color: #ffe14a;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.featured-project > p:not(.project-type):not(.featured-project-subtitle) {
+    max-width: 700px;
+    color: #8c98bd;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.featured-project strong {
+    color: #ffe14a;
+}
+
+.featured-project-button {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 20px;
+
+    background-color: #151d35;
+    border: 1px solid #39466b;
+
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.featured-project-button:hover {
+    color: #ffe14a;
+    border-color: #8b5cf6;
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.18);
+
+    transform: translateX(3px);
+}
+
+@media (max-width: 700px) {
+
+    .featured-project {
+        padding: 25px;
+    }
+
+    .featured-project h2 {
+        font-size: 25px;
+        letter-spacing: 3px;
+    }
+
 }
