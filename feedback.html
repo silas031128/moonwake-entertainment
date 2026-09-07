@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Moonwake Feedback</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+
+	<body>
+
+		<header class="home-header">
+			<h1>FEEDBACK</h1>
+			<h2>MOONWAKE COMMUNICATION DATABASE</h2>
+		</header>
+
+		<main class="feedback-page">
+
+			<div class="feedback-status-panel">
+
+				<p>
+					DATABASE STATUS: <span>ONLINE</span>
+				</p>
+				<p>
+					SUBMISSIONS: <span>OPEN</span>
+				</p>
+				<p>
+					ACCOUNT REQUIRED: <span>NO</span>
+				</p>
+
+			</div>
+
+			<article class="feedback-record">
+
+				<div class="feedback-code">
+					FEEDBACK • MW-FDBK
+				</div>
+
+				<h2>TELL MOONWAKE SOMETHING</h2>
+
+				<p>
+					Found a bug? Have an idea? Want to tell us
+					something about the website or a Moonwake project?
+				</p>
+
+				<form
+					  id="feedback-form"
+					  action="https://formspree.io/f/xoeqngka"
+					  method="POST"
+					>
+
+					<label for="feedback-name">
+						NAME / NICKNAME
+					</label>
+
+					<input
+						type="text"
+						id="feedback-name"
+						name="name"
+						placeholder="Optional"
+					/>
+
+					<label for="feedback-email">
+						EMAIL ADDRESS
+					</label>
+
+					<input
+						type="email"
+						id="feedback-email"
+						name="email"
+						placeholder="Optional"
+					/>
+
+					<label for="feedback-category">
+						CATEGORY
+					</label>
+
+					<select
+						id="feedback-category"
+						name="category"
+						required=""
+					>
+						<option value="">Select a category</option>
+						<option value="bug">Bug Report</option>
+						<option value="suggestion">Suggestion</option>
+						<option value="website">Website</option>
+						<option value="project">Project</option>
+						<option value="other">Other</option>
+					</select>
+
+					<label for="feedback-message">
+						MESSAGE
+					</label>
+
+					<textarea
+						id="feedback-message"
+						name="message"
+						placeholder="Write your feedback here..."
+						required=""
+					></textarea>
+
+					<button type="submit">
+						SUBMIT FEEDBACK
+					</button>
+
+				</form>
+
+				<p id="feedback-message-status"></p>
+
+			</article>
+
+		</main>
+
+		<a href="index.html">
+			<button>RETURN TO MOONWAKE</button>
+		</a>
+
+		<footer>
+			<p>MOONWAKE ENTERTAINMENT</p>
+			<p>© 2026 Moonwake Entertainment</p>
+		</footer>
+
+		<script src="script.js"></script>
+		
+	</body>
+</html>

@@ -1278,3 +1278,152 @@ footer {
 .home-header h1 {
     text-shadow: 0 0 25px rgba(100, 130, 255, 0.12);
 }
+
+/* Moonwake Feedback */
+
+.feedback-page {
+    width: 850px;
+    max-width: 90%;
+    margin: 0 auto 60px;
+}
+
+.feedback-status-panel {
+    background-color: #0a0f1d;
+
+    border: 1px solid #252f4c;
+    border-radius: 8px;
+
+    padding: 15px 20px;
+    margin-bottom: 30px;
+
+    text-align: left;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.feedback-status-panel p {
+    margin: 6px 0;
+    color: #687494;
+}
+
+.feedback-status-panel span {
+    color: #8c98bd;
+}
+
+
+/* Feedback record */
+
+.feedback-record {
+    width: 700px;
+    max-width: 90%;
+
+    margin: 0 auto 50px;
+    padding: 40px;
+
+    box-sizing: border-box;
+
+    background-color: #11182c;
+
+    border: 1px solid #39466b;
+    border-radius: 8px;
+
+    text-align: left;
+    line-height: 1.7;
+}
+
+.feedback-code {
+    margin-bottom: 10px;
+
+    color: #687494;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.feedback-record h2 {
+    margin-bottom: 20px;
+}
+
+.feedback-record > p {
+    color: #8c98bd;
+    margin-bottom: 30px;
+}
+
+
+/* Feedback form */
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#feedback-form label {
+    margin-bottom: 8px;
+
+    color: #687494;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    margin-bottom: 22px;
+
+    background-color: #0a0f1d;
+    color: white;
+
+    border: 1px solid #39466b;
+    border-radius: 6px;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+#feedback-form input:focus,
+#feedback-form select:focus,
+#feedback-form textarea:focus {
+    border-color: #8c98bd;
+
+    box-shadow: 0 0 10px rgba(100, 130, 255, 0.15);
+}
+
+#feedback-form input::placeholder,
+#feedback-form textarea::placeholder {
+    color: #4d5875;
+}
+
+#feedback-form select {
+    cursor: pointer;
+}
+
+#feedback-form textarea {
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+#feedback-form button {
+    margin: 5px 0 0;
+}
+
+#feedback-message-status {
+    margin: 20px 0 0;
+
+    color: #8c98bd;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
