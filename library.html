@@ -1,0 +1,1024 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8" />
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+				<title>Library | Moonwake Entertainment</title>
+
+				<link rel="stylesheet" href="style.css" />
+
+				<link rel="icon" type="image/png" href="Images/moonwake-favicon.png" />
+
+					<style>
+
+						/* Base */
+
+						* {
+						box-sizing: border-box;
+						}
+
+						body {
+						margin: 0;
+
+						background: #080d19;
+
+						color: #ffffff;
+
+						font-family: Arial, Helvetica, sans-serif;
+						}
+
+						a {
+						transition:
+						color 0.2s ease,
+						text-shadow 0.2s ease,
+						border-color 0.2s ease,
+						transform 0.2s ease;
+						}
+
+
+						/* Header */
+
+						.library-header {
+						width: 1100px;
+						max-width: 94%;
+
+						margin: 55px auto 25px;
+
+						padding: 32px;
+
+						background:
+						linear-gradient(
+						135deg,
+						rgba(139, 92, 246, 0.055),
+						transparent 55%
+						),
+						#11182c;
+
+						border: 1px solid #39466b;
+						border-top: 3px solid #8b5cf6;
+						border-radius: 4px;
+
+						box-shadow:
+						0 12px 28px rgba(0, 0, 0, 0.25),
+						0 0 20px rgba(139, 92, 246, 0.035);
+
+						position: relative;
+						}
+
+						.library-header::after {
+						content: "LIB-001";
+
+						position: absolute;
+
+						top: 25px;
+						right: 28px;
+
+						color: #39466b;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.library-code {
+						margin: 0;
+
+						color: #687494;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.library-header h1 {
+						margin: 10px 0 7px;
+
+						color: #ffffff;
+
+						font-size: 34px;
+						letter-spacing: 4px;
+
+						text-shadow:
+						0 0 12px rgba(139, 92, 246, 0.18),
+						0 0 18px rgba(255, 225, 74, 0.07);
+						}
+
+						.library-subtitle {
+						margin: 0;
+
+						color: #8b5cf6;
+
+						font-size: 11px;
+						font-weight: bold;
+
+						letter-spacing: 3px;
+						}
+
+						.library-line {
+						width: 100%;
+						height: 1px;
+
+						margin: 22px 0;
+
+						background: #252f4c;
+						}
+
+
+						/* Status */
+
+						.library-status-row {
+						display: flex;
+
+						flex-wrap: wrap;
+
+						gap: 35px;
+						}
+
+						.library-status {
+						display: flex;
+
+						gap: 10px;
+
+						align-items: center;
+						}
+
+						.library-status span {
+						color: #687494;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 1.5px;
+						}
+
+						.library-status strong {
+						color: #ffe14a;
+
+						font-size: 9px;
+
+						letter-spacing: 1px;
+						}
+
+
+						/* Main content */
+
+						.library-page {
+						width: 1100px;
+						max-width: 94%;
+
+						margin: 0 auto 70px;
+						}
+
+						.library-section-heading {
+						margin: 35px 0 16px;
+						}
+
+						.library-section-heading p {
+						margin: 0 0 7px;
+
+						color: #687494;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.library-section-heading h2 {
+						margin: 0;
+
+						color: #ffffff;
+
+						font-size: 19px;
+
+						letter-spacing: 2px;
+						}
+
+
+						/* Book cards */
+
+						.library-books {
+						display: flex;
+
+						flex-direction: column;
+
+						gap: 16px;
+						}
+
+						.library-book-card {
+						position: relative;
+
+						display: flex;
+
+						justify-content: space-between;
+						align-items: center;
+
+						gap: 30px;
+
+						padding: 27px 30px;
+
+						background:
+						linear-gradient(
+						120deg,
+						rgba(139, 92, 246, 0.025),
+						transparent 55%
+						),
+						#11182c;
+
+						border: 1px solid #39466b;
+						border-left: 3px solid #8b5cf6;
+						border-radius: 4px;
+
+						box-shadow:
+						0 8px 20px rgba(0, 0, 0, 0.20);
+
+						transition:
+						border-color 0.2s ease,
+						transform 0.2s ease,
+						box-shadow 0.2s ease;
+						}
+
+						.library-book-card:hover {
+						transform: translateY(-2px);
+
+						border-color: #8b5cf6;
+
+						box-shadow:
+						0 12px 25px rgba(0, 0, 0, 0.25),
+						0 0 18px rgba(139, 92, 246, 0.05);
+						}
+
+						.library-book-info {
+						flex: 1;
+						}
+
+						.library-book-code {
+						margin: 0 0 10px;
+
+						color: #687494;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.library-book-card h3 {
+						margin: 0 0 8px;
+
+						color: #ffffff;
+
+						font-size: 22px;
+
+						letter-spacing: 2px;
+						}
+
+						.library-book-genre {
+						margin: 0 0 15px;
+
+						color: #8b5cf6;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.library-book-description {
+						max-width: 700px;
+
+						margin: 0;
+
+						color: #8c98bd;
+
+						font-size: 12px;
+
+						line-height: 1.7;
+						}
+
+
+						/* Book meta */
+
+						.library-book-meta {
+						display: flex;
+
+						align-items: center;
+
+						gap: 10px;
+
+						margin-top: 18px;
+
+						padding-top: 14px;
+
+						border-top: 1px solid #252f4c;
+						}
+
+						.library-book-meta span {
+						color: #687494;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 1.5px;
+						}
+
+						.library-book-meta strong {
+						color: #ffe14a;
+
+						font-size: 9px;
+
+						letter-spacing: 1px;
+						}
+
+
+						/* View book button */
+
+						.library-book-action {
+						flex-shrink: 0;
+						}
+
+						.library-book-action a {
+						display: inline-block;
+
+						padding: 12px 18px;
+
+						background: #18203a;
+
+						border: 1px solid #39466b;
+						border-radius: 3px;
+
+						color: #ffe14a;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 1.5px;
+
+						text-decoration: none;
+						}
+
+						.library-book-action a:hover {
+						color: #ffffff;
+
+						border-color: #8b5cf6;
+
+						box-shadow:
+						0 0 14px rgba(139, 92, 246, 0.15);
+
+						transform: translateX(3px);
+						}
+
+
+						/* Coming soon */
+
+						.library-coming-soon {
+						border-left-color: #39466b;
+
+						opacity: 0.75;
+						}
+
+						.library-coming-soon:hover {
+						border-color: #39466b;
+
+						transform: none;
+
+						box-shadow:
+						0 8px 20px rgba(0, 0, 0, 0.20);
+						}
+
+						.library-coming-soon .library-book-genre {
+						color: #687494;
+						}
+
+						.library-coming-soon .library-book-description {
+						color: #687494;
+						}
+
+						.library-book-status {
+						flex-shrink: 0;
+
+						color: #687494;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+
+						/* Universal footer */
+
+						.moonwake-footer {
+						width: 100%;
+
+						box-sizing: border-box;
+
+						margin-top: 70px;
+
+						background:
+						linear-gradient(
+						135deg,
+						rgba(139, 92, 246, 0.035),
+						transparent 45%
+						),
+						#0b1120;
+
+						border-top: 1px solid #39466b;
+
+						box-shadow:
+						0 -10px 30px rgba(0, 0, 0, 0.20);
+
+						text-align: left;
+						}
+
+						.moonwake-footer-main {
+						width: 1100px;
+						max-width: 94%;
+
+						margin: 0 auto;
+
+						padding: 42px 0 38px;
+
+						display: flex;
+
+						justify-content: space-between;
+
+						gap: 60px;
+						}
+
+
+						/* FOOTER BRAND */
+
+						.moonwake-footer-brand {
+						display: flex;
+
+						align-items: center;
+
+						min-width: 240px;
+
+						gap: 18px;
+						}
+
+						.footer-logo {
+						width: 62px;
+						height: 62px;
+
+						object-fit: contain;
+
+						filter:
+						drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
+						drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
+						}
+
+						.footer-brand-text {
+						min-width: 0;
+						}
+
+						.footer-name {
+						margin: 0 0 7px;
+
+						color: #ffffff;
+
+						font-size: 12px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.footer-tagline {
+						margin: 0;
+
+						color: #687494;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 1.5px;
+						}
+
+
+						/* FOOTER NAV */
+
+						.moonwake-footer-nav {
+						display: grid;
+
+						grid-template-columns:
+						repeat(3, minmax(110px, 1fr));
+
+						gap: 55px;
+
+						flex: 1;
+
+						max-width: 620px;
+						}
+
+						.footer-column {
+						display: flex;
+
+						flex-direction: column;
+
+						gap: 9px;
+						}
+
+						.footer-column h3 {
+						margin: 0 0 7px;
+
+						color: #8b5cf6;
+
+						font-size: 9px;
+						font-weight: bold;
+
+						letter-spacing: 2px;
+						}
+
+						.footer-column a {
+						width: fit-content;
+
+						color: #687494;
+
+						font-size: 10px;
+						font-weight: bold;
+
+						letter-spacing: 0.8px;
+
+						text-decoration: none;
+						}
+
+						.footer-column a:hover {
+						color: #ffe14a;
+
+						text-shadow:
+						0 0 8px rgba(255, 225, 74, 0.18);
+
+						transform: translateX(3px);
+						}
+
+
+						/* FOOTER BOTTOM */
+
+						.moonwake-footer-bottom {
+						width: 1100px;
+						max-width: 94%;
+
+						margin: 0 auto;
+
+						padding: 17px 0;
+
+						display: flex;
+
+						justify-content: space-between;
+
+						align-items: center;
+
+						border-top: 1px solid #252f4c;
+						}
+
+						.moonwake-footer-bottom p {
+						margin: 0;
+
+						color: #39466b;
+
+						font-size: 8px;
+						font-weight: bold;
+
+						letter-spacing: 1.5px;
+						}
+
+
+						/* Mobile */
+
+						@media (max-width: 750px) {
+
+						.library-header {
+						padding: 25px;
+						}
+
+						.library-header::after {
+						display: none;
+						}
+
+						.library-header h1 {
+						font-size: 27px;
+
+						letter-spacing: 3px;
+						}
+
+						.library-status-row {
+						flex-direction: column;
+
+						gap: 12px;
+						}
+
+						.library-book-card {
+						align-items: stretch;
+
+						flex-direction: column;
+
+						padding: 23px;
+						}
+
+						.library-book-card h3 {
+						font-size: 18px;
+						}
+
+						.library-book-action a {
+						width: 100%;
+
+						text-align: center;
+						}
+
+						.library-book-status {
+						padding-top: 5px;
+						}
+
+						.moonwake-footer-main {
+						flex-direction: column;
+
+						gap: 35px;
+
+						padding: 35px 0;
+						}
+
+						.moonwake-footer-brand {
+						min-width: 0;
+						}
+
+						.moonwake-footer-nav {
+						width: 100%;
+
+						grid-template-columns:
+						repeat(2, minmax(0, 1fr));
+
+						gap: 30px;
+						}
+
+						.moonwake-footer-bottom {
+						align-items: flex-start;
+
+						flex-direction: column;
+
+						gap: 7px;
+
+						padding: 17px 0;
+						}
+						}
+
+
+						@media (max-width: 450px) {
+
+						.library-page,
+						.library-header {
+						max-width: 92%;
+						}
+
+						.moonwake-footer-nav {
+						grid-template-columns: 1fr;
+						}
+
+						.footer-logo {
+						width: 52px;
+						height: 52px;
+						}
+
+						.footer-name {
+						font-size: 10px;
+						}
+						}
+
+					</style>
+
+				</head>
+
+
+	<body>
+
+
+		<!-- Library -->
+
+		<main class="library-page">
+
+			<section class="library-header">
+
+				<p class="library-code">
+					LIBRARY
+				</p>
+
+				<h1>
+					MOONWAKE LIBRARY
+				</h1>
+
+				<p class="library-subtitle">
+					WRITING &amp; PUBLICATIONS
+				</p>
+
+				<div class="library-line"></div>
+
+				<div class="library-status-row">
+
+					<div class="library-status">
+
+						<span>
+							LIBRARY STATUS
+						</span>
+
+						<strong>
+							ACTIVE
+						</strong>
+
+					</div>
+
+
+					<div class="library-status">
+
+						<span>
+							BOOKS IN LIBRARY
+						</span>
+
+						<strong>
+							01
+						</strong>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!--  Book catalog -->
+
+			<section>
+
+				<div class="library-section-heading">
+
+					<p>
+						CATALOG
+					</p>
+
+					<h2>
+						AVAILABLE WORKS
+					</h2>
+
+				</div>
+
+
+				<div class="library-books">
+
+					<!-- BOOK 001 -->
+
+					<article class="library-book-card">
+
+						<div class="library-book-cover">
+
+							<img
+								src="Images/places-cover.png"
+								alt="The Places That Shouldn't Exist book cover"
+        />
+
+							</div>
+
+
+						<div class="library-book-info">
+
+							<p class="library-book-code">
+								BOOK-001
+							</p>
+
+							<h3>
+								THE PLACES THAT SHOULDN'T EXIST
+							</h3>
+
+							<p class="library-book-genre">
+								PSYCHOLOGICAL HORROR
+							</p>
+
+							<p class="library-book-description">
+								A psychological horror novel following Silas
+								through a town that doesn't seem to follow
+								the rules of reality.
+							</p>
+
+							<div class="library-book-meta">
+
+								<span>
+									STATUS
+								</span>
+
+								<strong>
+									COMPLETED
+								</strong>
+
+							</div>
+
+						</div>
+
+
+						<div class="library-book-action">
+
+							<a href="places-library.html">
+								VIEW BOOK →
+							</a>
+
+						</div>
+
+					</article>
+
+
+					<!-- BOOK 002 -->
+
+					<article class="library-book-card library-coming-soon">
+
+						<div class="library-book-info">
+
+							<p class="library-book-code">
+								BOOK-002
+							</p>
+
+							<h3>
+								FUTURE PUBLICATION
+							</h3>
+
+							<p class="library-book-genre">
+								CLASSIFIED
+							</p>
+
+							<p class="library-book-description">
+								A future Moonwake writing project.
+							</p>
+
+						</div>
+
+
+						<div class="library-book-status">
+							COMING SOON
+						</div>
+
+					</article>
+
+
+				</div>
+
+			</section>
+
+		</main>
+
+		<a href="index.html" class="library-return-button">
+			RETURN
+		</a>
+
+		<!-- Universal footer-->
+
+		<footer class="moonwake-footer">
+
+			<div class="moonwake-footer-main">
+
+
+				<div class="moonwake-footer-brand">
+
+					<img
+						src="Images/moonwake-favicon.png"
+						alt="Moonwake Entertainment"
+						class="footer-logo"
+                />
+
+						<div class="footer-brand-text">
+
+							<p class="footer-name">
+								MOONWAKE ENTERTAINMENT
+							</p>
+
+							<p class="footer-tagline">
+								CREATING WORLDS BEYOND THE MAP
+							</p>
+
+						</div>
+
+					</div>
+
+
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+            >
+
+
+					<div class="footer-column">
+
+						<h3>
+							EXPLORE
+						</h3>
+
+						<a href="about.html">
+							About
+						</a>
+
+						<a href="news.html">
+							News
+						</a>
+
+						<a href="archives.html">
+							Archives
+						</a>
+
+						<a href="youtube-project.html">
+							YouTube
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3>
+							PROJECTS
+						</h3>
+
+						<a href="projects.html">
+							Projects
+						</a>
+
+						<a href="northreach-project.html">
+							Northreach
+						</a>
+
+						<a href="library.html">
+							Books
+						</a>
+
+						<a href="music-project.html">
+							Music
+						</a>
+
+						<a href="smartpot-project.html">
+							Smart Pot
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3>
+							SUPPORT
+						</h3>
+
+						<a href="donate.html">
+							Donate
+						</a>
+
+						<a href="store.html">
+							Store
+						</a>
+
+						<a href="feedback.html">
+							Feedback
+						</a>
+
+						<a
+							href="https://discord.gg/FWcHdbuw4"
+							target="_blank"
+							rel="noopener noreferrer"
+                    >
+							Discord
+						</a>
+
+						<a
+							href="https://www.youtube.com/@MoonwakeEntertainment"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							YouTube
+						</a>
+
+					</div>
+
+
+				</nav>
+
+			</div>
+
+
+			<div class="moonwake-footer-bottom">
+
+				<p>
+					© 2026 Moonwake Entertainment
+				</p>
+
+				<p>
+					CREATING WORLDS BEYOND THE MAP
+				</p>
+
+			</div>
+
+		</footer>
+
+
+	</body>
+
+</html>

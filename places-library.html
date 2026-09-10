@@ -1,0 +1,1648 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8"/>
+
+			<meta
+				name="viewport"
+				content="width=device-width, initial-scale=1.0"
+    />
+
+					<link rel="stylesheet" href="style.css"/>
+
+					<title>The Places That Shouldn't Exist | Moonwake Entertainment</title>
+
+					<link
+						rel="icon"
+						type="image/png"
+						href="Images/moonwake-favicon.png"
+    />
+
+						<style>
+
+							/* Base */
+
+							* {
+							box-sizing: border-box;
+							}
+
+							html {
+							margin: 0;
+							padding: 0;
+							}
+
+							body {
+							margin: 0;
+							padding: 0;
+
+							background: #080d19;
+							color: #ffffff;
+
+							font-family: Arial, Helvetica, sans-serif;
+							}
+
+							a,
+							button {
+							font-family: inherit;
+							}
+
+
+							/* Page */
+
+							.book-page {
+							width: 1100px;
+							max-width: 94%;
+
+							margin: 55px auto 70px;
+							}
+
+
+							/* Book header */
+
+							.book-header {
+							padding: 34px;
+
+							background:
+							linear-gradient(
+							135deg,
+							rgba(139, 92, 246, 0.055),
+							transparent 55%
+							),
+							#11182c;
+
+							border: 1px solid #39466b;
+							border-top: 3px solid #8b5cf6;
+							border-radius: 4px;
+
+							box-shadow:
+							0 12px 28px rgba(0, 0, 0, 0.25),
+							0 0 20px rgba(139, 92, 246, 0.035);
+							}
+
+							.book-code {
+							margin: 0 0 10px;
+
+							color: #687494;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 2px;
+							}
+
+							.book-header h1 {
+							margin: 0 0 9px;
+
+							color: #ffffff;
+
+							font-size: 34px;
+							font-weight: bold;
+
+							line-height: 1.2;
+
+							letter-spacing: 4px;
+
+							overflow-wrap: break-word;
+
+							text-shadow:
+							0 0 12px rgba(139, 92, 246, 0.18),
+							0 0 18px rgba(255, 225, 74, 0.07);
+							}
+
+							.book-subtitle {
+							margin: 0;
+
+							color: #8b5cf6;
+
+							font-size: 11px;
+							font-weight: bold;
+
+							letter-spacing: 3px;
+							}
+
+							.book-line {
+							width: 100%;
+							height: 1px;
+
+							margin: 23px 0;
+
+							background: #252f4c;
+							}
+
+
+							/* Book status */
+
+							.book-status-row {
+							display: flex;
+
+							flex-wrap: wrap;
+
+							gap: 35px;
+							}
+
+							.book-status {
+							display: flex;
+
+							align-items: center;
+
+							gap: 10px;
+
+							min-width: 0;
+							}
+
+							.book-status span {
+							flex-shrink: 0;
+
+							color: #687494;
+
+							font-size: 8px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+							}
+
+							.book-status strong {
+							min-width: 0;
+
+							color: #ffe14a;
+
+							font-size: 9px;
+
+							letter-spacing: 1px;
+
+							overflow-wrap: break-word;
+							}
+
+
+							/* Sections */
+
+							.book-section {
+							margin-top: 22px;
+
+							padding: 28px 30px;
+
+							background:
+							linear-gradient(
+							120deg,
+							rgba(139, 92, 246, 0.025),
+							transparent 55%
+							),
+							#11182c;
+
+							border: 1px solid #39466b;
+							border-radius: 4px;
+
+							box-shadow:
+							0 8px 20px rgba(0, 0, 0, 0.20);
+							}
+
+							.book-section-code {
+							margin: 0 0 9px;
+
+							color: #687494;
+
+							font-size: 8px;
+							font-weight: bold;
+
+							letter-spacing: 2px;
+							}
+
+							.book-section h2 {
+							margin: 0 0 16px;
+
+							color: #ffffff;
+
+							font-size: 19px;
+
+							line-height: 1.3;
+
+							letter-spacing: 2px;
+
+							overflow-wrap: break-word;
+							}
+
+							.book-section p {
+							max-width: 850px;
+
+							margin: 0;
+
+							color: #8c98bd;
+
+							font-size: 13px;
+
+							line-height: 1.75;
+
+							overflow-wrap: break-word;
+							}
+
+
+							/* Book information */
+
+							.book-info-list {
+							width: 100%;
+
+							margin-top: 20px;
+
+							border-top: 1px solid #252f4c;
+							}
+
+							.book-info-row {
+							display: flex;
+
+							align-items: center;
+							justify-content: space-between;
+
+							gap: 20px;
+
+							width: 100%;
+
+							padding: 13px 0;
+
+							border-bottom: 1px solid #252f4c;
+							}
+
+							.book-info-row span {
+							flex-shrink: 0;
+
+							color: #687494;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+							}
+
+							.book-info-row strong {
+							min-width: 0;
+
+							color: #ffe14a;
+
+							font-size: 9px;
+
+							letter-spacing: 1px;
+
+							text-align: right;
+
+							overflow-wrap: break-word;
+							}
+
+
+							/* Sample section */
+
+							.book-sample-section {
+							border-left: 3px solid #8b5cf6;
+							}
+
+							.book-sample-intro {
+							margin-bottom: 20px !important;
+
+							color: #687494 !important;
+
+							font-size: 10px !important;
+
+							font-weight: bold;
+
+							letter-spacing: 1.2px;
+							}
+
+							.read-chapter-button {
+							display: inline-block;
+
+							padding: 13px 20px;
+
+							background: #18203a;
+
+							border: 1px solid #39466b;
+							border-radius: 3px;
+
+							color: #ffe14a;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 1.7px;
+
+							cursor: pointer;
+
+							transition:
+							color 0.2s ease,
+							border-color 0.2s ease,
+							box-shadow 0.2s ease,
+							transform 0.2s ease;
+							}
+
+							.read-chapter-button:hover {
+							color: #ffffff;
+
+							border-color: #8b5cf6;
+
+							box-shadow:
+							0 0 15px rgba(139, 92, 246, 0.16);
+
+							transform: translateX(3px);
+							}
+
+							.read-chapter-button:active {
+							border-color: #ffe14a;
+							}
+
+
+							/* End and future release */
+
+							.book-full-release {
+							border-left: 3px solid #ffe14a;
+
+							text-align: center;
+							}
+
+							.book-full-release h2 {
+							margin-bottom: 10px;
+							}
+
+							.book-full-release p {
+							margin: 0 auto;
+
+							color: #687494;
+							}
+
+							.release-status {
+							display: inline-block;
+
+							margin-top: 20px;
+
+							padding: 10px 17px;
+
+							background: #18203a;
+
+							border: 1px solid #39466b;
+							border-radius: 3px;
+
+							color: #687494;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+							}
+
+
+							/* Chapter modal */
+
+							#chapterDialog {
+							width: min(900px, 92vw);
+							max-height: 88vh;
+
+							padding: 0;
+
+							background: #0d1426;
+
+							color: #ffffff;
+
+							border: 1px solid #39466b;
+							border-top: 3px solid #8b5cf6;
+							border-radius: 4px;
+
+							box-shadow:
+							0 20px 60px rgba(0, 0, 0, 0.55),
+							0 0 30px rgba(139, 92, 246, 0.08);
+							}
+
+							#chapterDialog::backdrop {
+							background: rgba(4, 7, 15, 0.82);
+
+							backdrop-filter: blur(4px);
+							}
+
+
+							/* Modal header */
+
+							.chapter-modal-header {
+							display: flex;
+
+							align-items: flex-start;
+							justify-content: space-between;
+
+							gap: 25px;
+
+							padding: 22px 28px;
+
+							background:
+							linear-gradient(
+							135deg,
+							rgba(139, 92, 246, 0.06),
+							transparent 60%
+							),
+							#11182c;
+
+							border-bottom: 1px solid #252f4c;
+							}
+
+							.chapter-modal-title {
+							flex: 1 1 auto;
+
+							min-width: 0;
+							}
+
+							.chapter-modal-code {
+							margin: 0 0 8px;
+
+							color: #687494;
+
+							font-size: 8px;
+							font-weight: bold;
+
+							letter-spacing: 2px;
+							}
+
+							.chapter-modal-header h2 {
+							margin: 0;
+
+							color: #ffffff;
+
+							font-size: 22px;
+
+							line-height: 1.3;
+
+							letter-spacing: 2px;
+
+							overflow-wrap: break-word;
+							}
+
+							.chapter-close {
+							flex: 0 0 34px;
+
+							width: 34px;
+							height: 34px;
+
+							padding: 0;
+
+							background: #18203a;
+
+							border: 1px solid #39466b;
+							border-radius: 3px;
+
+							color: #687494;
+
+							font-size: 20px;
+
+							line-height: 1;
+
+							cursor: pointer;
+
+							transition:
+							color 0.2s ease,
+							border-color 0.2s ease,
+							box-shadow 0.2s ease;
+							}
+
+							.chapter-close:hover {
+							color: #ffe14a;
+
+							border-color: #8b5cf6;
+
+							box-shadow:
+							0 0 12px rgba(139, 92, 246, 0.14);
+							}
+
+
+							/* Modal reading area */
+
+							.chapter-modal-body {
+							max-height: calc(88vh - 100px);
+
+							overflow-y: auto;
+							overflow-x: hidden;
+
+							padding: 30px 38px 45px;
+
+							scrollbar-color: #39466b #0d1426;
+							scrollbar-width: thin;
+							}
+
+							.chapter-modal-body::-webkit-scrollbar {
+							width: 8px;
+							}
+
+							.chapter-modal-body::-webkit-scrollbar-track {
+							background: #0d1426;
+							}
+
+							.chapter-modal-body::-webkit-scrollbar-thumb {
+							background: #39466b;
+
+							border-radius: 4px;
+							}
+
+							.chapter-modal-body::-webkit-scrollbar-thumb:hover {
+							background: #8b5cf6;
+							}
+
+
+							/* Chapter text */
+
+							.chapter-text {
+							width: 100%;
+							max-width: 760px;
+
+							margin: 0 auto;
+
+							min-width: 0;
+							}
+
+							.chapter-text p {
+							margin: 0 0 20px;
+
+							color: #c0c8df;
+
+							font-family:
+							Georgia,
+							"Times New Roman",
+							serif;
+
+							font-size: 16px;
+
+							line-height: 1.9;
+
+							overflow-wrap: break-word;
+							}
+
+							.chapter-text p:last-child {
+							margin-bottom: 0;
+							}
+
+							.chapter-end {
+							margin-top: 35px !important;
+
+							padding-top: 20px;
+
+							border-top: 1px solid #252f4c;
+
+							color: #687494 !important;
+
+							font-family:
+							Arial,
+							Helvetica,
+							sans-serif !important;
+
+							font-size: 9px !important;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+
+							text-align: center;
+							}
+
+
+							/* Return button */
+
+							.book-return {
+							width: 100%;
+
+							margin: 30px 0;
+
+							text-align: center;
+							}
+
+							.book-return a {
+							display: inline-block;
+
+							padding: 12px 20px;
+
+							background: #11182c;
+
+							border: 1px solid #39466b;
+							border-radius: 3px;
+
+							color: #8c98bd;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+
+							text-decoration: none;
+
+							transition:
+							color 0.2s ease,
+							border-color 0.2s ease,
+							box-shadow 0.2s ease,
+							transform 0.2s ease;
+							}
+
+							.book-return a:hover {
+							color: #ffe14a;
+
+							border-color: #8b5cf6;
+
+							box-shadow:
+							0 0 14px rgba(139, 92, 246, 0.12);
+
+							transform: translateY(-2px);
+							}
+
+
+							/* Universal footer */
+
+							.moonwake-footer {
+							width: 100%;
+
+							margin-top: 70px;
+
+							background:
+							linear-gradient(
+							135deg,
+							rgba(139, 92, 246, 0.035),
+							transparent 45%
+							),
+							#0b1120;
+
+							border-top: 1px solid #39466b;
+
+							box-shadow:
+							0 -10px 30px rgba(0, 0, 0, 0.20);
+							}
+
+							.moonwake-footer-main {
+							width: 1100px;
+							max-width: 94%;
+
+							margin: 0 auto;
+
+							padding: 42px 0 38px;
+
+							display: flex;
+
+							justify-content: space-between;
+
+							gap: 60px;
+							}
+
+							.moonwake-footer-brand {
+							display: flex;
+
+							align-items: center;
+
+							min-width: 240px;
+
+							gap: 18px;
+							}
+
+							.footer-logo {
+							flex-shrink: 0;
+
+							width: 62px;
+							height: 62px;
+
+							object-fit: contain;
+
+							filter:
+							drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
+							drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
+							}
+
+							.footer-brand-text {
+							min-width: 0;
+							}
+
+							.footer-name {
+							margin: 0 0 7px;
+
+							color: #ffffff;
+
+							font-size: 12px;
+							font-weight: bold;
+
+							letter-spacing: 2px;
+
+							overflow-wrap: break-word;
+							}
+
+							.footer-tagline {
+							margin: 0;
+
+							color: #687494;
+
+							font-size: 8px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+
+							overflow-wrap: break-word;
+							}
+
+							.moonwake-footer-nav {
+							display: grid;
+
+							grid-template-columns:
+							repeat(3, minmax(110px, 1fr));
+
+							gap: 55px;
+
+							flex: 1;
+
+							min-width: 0;
+
+							max-width: 620px;
+							}
+
+							.footer-column {
+							display: flex;
+
+							flex-direction: column;
+
+							gap: 9px;
+
+							min-width: 0;
+							}
+
+							.footer-column h3 {
+							margin: 0 0 7px;
+
+							color: #8b5cf6;
+
+							font-size: 9px;
+							font-weight: bold;
+
+							letter-spacing: 2px;
+							}
+
+							.footer-column a {
+							width: fit-content;
+
+							color: #687494;
+
+							font-size: 10px;
+							font-weight: bold;
+
+							letter-spacing: 0.8px;
+
+							text-decoration: none;
+
+							transition:
+							color 0.2s ease,
+							text-shadow 0.2s ease,
+							transform 0.2s ease;
+							}
+
+							.footer-column a:hover {
+							color: #ffe14a;
+
+							text-shadow:
+							0 0 8px rgba(255, 225, 74, 0.18);
+
+							transform: translateX(3px);
+							}
+
+							.moonwake-footer-bottom {
+							width: 1100px;
+							max-width: 94%;
+
+							margin: 0 auto;
+
+							padding: 17px 0;
+
+							display: flex;
+
+							align-items: center;
+							justify-content: space-between;
+
+							gap: 20px;
+
+							border-top: 1px solid #252f4c;
+							}
+
+							.moonwake-footer-bottom p {
+							margin: 0;
+
+							color: #39466b;
+
+							font-size: 8px;
+							font-weight: bold;
+
+							letter-spacing: 1.5px;
+
+							overflow-wrap: break-word;
+							}
+
+
+							/* Mobile */
+
+							@media (max-width: 750px) {
+
+							.book-page {
+							max-width: 92%;
+
+							margin-top: 35px;
+							}
+
+							.book-header {
+							padding: 25px;
+							}
+
+							.book-header h1 {
+							font-size: 27px;
+
+							letter-spacing: 3px;
+							}
+
+							.book-status-row {
+							align-items: flex-start;
+
+							flex-direction: column;
+
+							gap: 12px;
+							}
+
+							.book-status {
+							width: 100%;
+
+							align-items: flex-start;
+							}
+
+							.book-status strong {
+							overflow-wrap: anywhere;
+							}
+
+							.book-section {
+							padding: 23px;
+							}
+
+							.book-info-row {
+							align-items: flex-start;
+
+							flex-direction: column;
+
+							gap: 6px;
+							}
+
+							.book-info-row strong {
+							text-align: left;
+							}
+
+							#chapterDialog {
+							width: 94vw;
+
+							max-width: 94vw;
+
+							max-height: 92vh;
+							}
+
+							.chapter-modal-header {
+							align-items: flex-start;
+
+							gap: 15px;
+
+							padding: 20px 22px;
+							}
+
+							.chapter-modal-title {
+							min-width: 0;
+							}
+
+							.chapter-modal-header h2 {
+							font-size: 18px;
+							}
+
+							.chapter-close {
+							flex-basis: 34px;
+							}
+
+							.chapter-modal-body {
+							max-height: calc(92vh - 100px);
+
+							padding: 25px 22px 35px;
+							}
+
+							.chapter-text p {
+							font-size: 15px;
+
+							line-height: 1.8;
+							}
+
+							.moonwake-footer-main {
+							flex-direction: column;
+
+							gap: 35px;
+
+							padding: 35px 0;
+							}
+
+							.moonwake-footer-brand {
+							min-width: 0;
+							}
+
+							.moonwake-footer-nav {
+							width: 100%;
+
+							grid-template-columns:
+							repeat(2, minmax(0, 1fr));
+
+							gap: 30px;
+							}
+
+							.moonwake-footer-bottom {
+							align-items: flex-start;
+
+							flex-direction: column;
+
+							gap: 7px;
+
+							padding: 17px 0;
+							}
+							}
+
+
+							@media (max-width: 450px) {
+
+							.book-header h1 {
+							font-size: 22px;
+
+							letter-spacing: 2px;
+							}
+
+							.book-subtitle {
+							font-size: 9px;
+
+							letter-spacing: 2px;
+							}
+
+							.chapter-modal-header {
+							padding: 18px;
+							}
+
+							.chapter-modal-header h2 {
+							font-size: 16px;
+							}
+
+							.chapter-close {
+							width: 32px;
+							height: 32px;
+
+							flex-basis: 32px;
+							}
+
+							.chapter-text p {
+							font-size: 14px;
+							}
+
+							.moonwake-footer-nav {
+							grid-template-columns: 1fr;
+							}
+
+							.footer-logo {
+							width: 52px;
+							height: 52px;
+							}
+
+							.footer-name {
+							font-size: 10px;
+							}
+							}
+
+						</style>
+
+					</head>
+
+
+	<body>
+
+
+		<!-- Book page -->
+
+		<main class="book-page">
+
+
+			<!-- Book header -->
+
+			<section class="book-header">
+
+				<p class="book-code">
+					BOOK-001
+				</p>
+
+				<h1>
+					THE PLACES THAT SHOULDN'T EXIST
+				</h1>
+
+				<p class="book-subtitle">
+					PSYCHOLOGICAL HORROR
+				</p>
+
+				<div class="book-line"></div>
+
+
+				<div class="book-status-row">
+
+					<div class="book-status">
+
+						<span>
+							STATUS
+						</span>
+
+						<strong>
+							IN DEVELOPMENT
+						</strong>
+
+					</div>
+
+
+					<div class="book-status">
+
+						<span>
+							PUBLICATION
+						</span>
+
+						<strong>
+							MOONWAKE ENTERTAINMENT
+						</strong>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- About -->
+
+			<section class="book-section">
+
+				<p class="book-section-code">
+					BOOK INFORMATION
+				</p>
+
+				<h2>
+					ABOUT THE BOOK
+				</h2>
+
+				<p>
+					A psychological horror novel following Silas through a town
+					that doesn't seem to follow the rules of reality.
+				</p>
+
+			</section>
+
+
+			<!-- Details -->
+
+			<section class="book-section">
+
+				<p class="book-section-code">
+					RECORD
+				</p>
+
+				<h2>
+					PUBLICATION DETAILS
+				</h2>
+
+
+				<div class="book-info-list">
+
+					<div class="book-info-row">
+
+						<span>
+							BOOK ID
+						</span>
+
+						<strong>
+							BOOK-001
+						</strong>
+
+					</div>
+
+
+					<div class="book-info-row">
+
+						<span>
+							GENRE
+						</span>
+
+						<strong>
+							PSYCHOLOGICAL HORROR
+						</strong>
+
+					</div>
+
+
+					<div class="book-info-row">
+
+						<span>
+							STATUS
+						</span>
+
+						<strong>
+							IN DEVELOPMENT
+						</strong>
+
+					</div>
+
+
+					<div class="book-info-row">
+
+						<span>
+							SAMPLE
+						</span>
+
+						<strong>
+							CHAPTER 1 AVAILABLE
+						</strong>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+			<!-- Sample -->
+
+			<section class="book-section book-sample-section">
+
+				<p class="book-section-code">
+					READER ACCESS
+				</p>
+
+				<h2>
+					READ A SAMPLE
+				</h2>
+
+				<p class="book-sample-intro">
+					READ THE FIRST CHAPTER OF THE PLACES THAT SHOULDN'T EXIST.
+				</p>
+
+				<button
+					type="button"
+					class="read-chapter-button"
+					id="readChapterButton"
+            >
+					READ CHAPTER 1 →
+				</button>
+
+			</section>
+
+
+			<!-- Full book -->
+
+			<section class="book-section book-full-release">
+
+				<p class="book-section-code">
+					FULL PUBLICATION
+				</p>
+
+				<h2>
+					THE FULL BOOK
+				</h2>
+
+				<p>
+					The complete story will become available when the book
+					is ready for publication.
+				</p>
+
+				<div class="release-status">
+					COMING SOON
+				</div>
+
+			</section>
+
+
+		</main>
+
+
+		<!-- Chapter modal -->
+
+		<dialog id="chapterDialog">
+
+			<div class="chapter-modal-header">
+
+				<div class="chapter-modal-title">
+
+					<p class="chapter-modal-code">
+						BOOK-001 / SAMPLE
+					</p>
+
+					<h2>
+						CHAPTER 1: WELCOME TO GREYWICK!
+					</h2>
+
+				</div>
+
+
+				<button
+					type="button"
+					class="chapter-close"
+					id="closeChapterButton"
+					aria-label="Close chapter"
+            >
+					×
+				</button>
+
+			</div>
+
+
+			<div class="chapter-modal-body">
+
+				<div class="chapter-text">
+
+
+					<p>
+						The moment I woke up, Greywick was exactly how I remembered it.
+						I had only moved here yesterday, but everything had been going
+						pretty well so far. I got out of bed and headed to the kitchen,
+						where I made myself some breakfast. After eating, I wandered
+						around the house for a few minutes, trying to figure out what
+						to do with the rest of my morning. Eventually, I decided to
+						continue coding the game I'd been working on. After spending
+						some time on it, I went outside to water my plants and, as I
+						liked to call it, touch some grass.
+					</p>
+
+
+					<p>
+						Greywick was a fairly small town, with rows of old-fashioned
+						houses lining the streets and a handful of shops and businesses
+						scattered around the center. Most of the buildings looked like
+						they had been there for decades, but they were still well
+						maintained. There was a grocery store, a bank, a school, a
+						library, a gas station, and even an old train station that I
+						hadn't gotten around to visiting yet. The town was quiet, but
+						not in a bad way. It just felt like the kind of place where
+						everyone knew everyone. While I was looking around, the sky
+						suddenly darkened, and rain began pouring down harder than I
+						expected. I stepped closer to the window and noticed a man
+						walking down the street. He wasn't running, covering himself,
+						or even looking bothered by the rain. He simply walked at the
+						same steady pace, as if the storm wasn't happening at all. I
+						watched him for a few seconds before shrugging and turning away.
+						Maybe he just really liked rain. Anyway, Greywick had a lot more
+						to it than I had originally expected.
+					</p>
+
+
+					<p>
+						A few hours had passed since the rain started, and by then it
+						had finally begun to calm down. The streets were still wet,
+						with puddles scattered across the sidewalks and water dripping
+						from the roofs of the houses. I decided to take a walk to
+						Greywick Market since I needed a few things anyway. As I walked
+						down the street, I noticed one of the neighbors standing
+						outside his house. He looked around my age, though I wasn't
+						completely sure. He noticed me walking past and gave me a small
+						wave.
+					</p>
+
+
+					<p>
+						“New around here?” he asked.
+					</p>
+
+
+					<p>
+						“Yeah,” I replied. “Moved in yesterday.”
+					</p>
+
+
+					<p>
+						He smiled. “Welcome to Greywick.”
+					</p>
+
+
+					<p>
+						“Thanks.”
+					</p>
+
+
+					<p>
+						He nodded and went back inside without saying anything else.
+						I continued toward the market, barely thinking about the
+						interaction. It was probably just another normal day in Greywick.
+					</p>
+
+
+					<p>
+						After a few more minutes of walking, I finally reached Greywick
+						Market. The little bell above the entrance jingled as I pushed
+						the door open, and I was greeted by the smell of fresh bread
+						and the quiet hum of people talking. The market wasn't very
+						large, but it had pretty much everything I needed, from food
+						and drinks to household supplies. I grabbed a basket and
+						started walking through the aisles, passing a few people along
+						the way. An older woman near the produce section smiled at me
+						as I walked by.
+					</p>
+
+
+					<p>
+						“Are you the new kid?” she asked.
+					</p>
+
+
+					<p>
+						“Yeah,” I said. “I moved here yesterday.”
+					</p>
+
+
+					<p>
+						“Silas, right?”
+					</p>
+
+
+					<p>
+						I stopped for a second. “Uh... yeah.”
+					</p>
+
+
+					<p>
+						She smiled again. “Thought so. Welcome to Greywick.”
+					</p>
+
+
+					<p>
+						I thanked her and continued down the aisle, slightly confused
+						about how she knew my name. I figured someone must have
+						mentioned it to her. Besides, I had more important things to
+						worry about, like figuring out what kind of cereal Greywick
+						Market had.
+					</p>
+
+
+					<p>
+						After grabbing a box of cereal and a few other things, I paid
+						for everything and left the market. Instead of taking the same
+						road home, I decided to take a shortcut through the older part
+						of town. I hadn't really explored that area yet, and I figured
+						I might as well see what was there. Most of the houses looked
+						older than the ones near my neighborhood, and the streets were
+						much quieter. As I walked, I noticed a large, worn-down
+						building sitting behind a row of trees. It looked like it had
+						been abandoned for years, with boarded-up windows and vines
+						covering parts of the walls. I slowed down and stared at it for
+						a moment. There wasn't anything particularly interesting about
+						the building, but something about it made me curious. I checked
+						the street sign and realized I had never even heard of this road
+						before. “Huh,” I muttered, looking toward the building. “Guess I
+						found somewhere new.”
+					</p>
+
+
+					<p>
+						I walked a little closer to the building, mostly because I was
+						curious. The front door was boarded up, so there wasn't much to
+						see from the outside. I stepped onto the old porch and looked
+						through one of the gaps in the boards covering the windows.
+						Inside, I could barely make out an empty hallway covered in
+						dust. There were a few old pieces of furniture scattered
+						around, but nothing that seemed particularly interesting. I was
+						about to leave when I noticed something strange. At the end of
+						the hallway was a door that looked completely clean, almost as
+						if it had been placed there recently. I stared at it for a few
+						seconds before looking away and then back again. The door was
+						still there, but now it looked just as dusty as everything else.
+						I blinked and rubbed my eyes. “Guess the light was playing tricks
+						on me,” I muttered. I stepped off the porch and continued
+						walking home.
+					</p>
+
+
+					<p>
+						I kept walking home, trying not to think about the building
+						anymore. The rain had stopped completely, and the streets were
+						starting to dry as the clouds slowly moved away. By the time I
+						reached my house, the whole thing already felt like a distant
+						thought. I put the groceries away, grabbed my laptop, and went
+						back to working on my game. Everything was normal again. The
+						quiet clicking of my keyboard filled the room as I worked, and
+						for a while, I completely forgot about the strange door I'd
+						seen. Whatever it was, it probably wasn't important.
+					</p>
+
+
+					<p>
+						It was getting late, so I decided to close my laptop and get
+						some fresh air before heading upstairs. I stepped outside and
+						looked down the street. Everything was quiet, and the last bit
+						of sunlight was disappearing behind the clouds. For some reason,
+						I glanced back toward the old building I'd passed earlier. I
+						stopped. Something looked different. I stared at the building
+						for a few seconds, trying to figure out what had caught my
+						attention. Then I realized what it was. One of the boards
+						covering the front windows was gone. I could see the dark
+						hallway inside again, but the clean door I'd noticed earlier was
+						nowhere to be seen. I looked closer at the entrance. There was
+						only a boarded-up doorway. “I... I could've sworn there was a
+						door boarded up here...” I said quietly. I stood there for
+						another moment before shaking my head. Maybe I was just tired.
+						I went back inside and shut the door behind me, leaving the old
+						building alone in the dark.
+					</p>
+
+
+					<p class="chapter-end">
+						END OF SAMPLE · CHAPTER 1
+					</p>
+
+
+				</div>
+
+			</div>
+
+		</dialog>
+
+
+		<!-- Return button -->
+
+		<div class="book-return">
+
+			<a href="library.html">
+				← BACK TO LIBRARY
+			</a>
+
+		</div>
+
+
+		<!-- Universal footer -->
+
+		<footer class="moonwake-footer">
+
+			<div class="moonwake-footer-main">
+
+
+				<div class="moonwake-footer-brand">
+
+					<img
+						src="Images/moonwake-favicon.png"
+						alt="Moonwake Entertainment"
+						class="footer-logo"
+                />
+
+						<div class="footer-brand-text">
+
+							<p class="footer-name">
+								MOONWAKE ENTERTAINMENT
+							</p>
+
+							<p class="footer-tagline">
+								CREATING WORLDS BEYOND THE MAP
+							</p>
+
+						</div>
+
+					</div>
+
+
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+            >
+
+					<div class="footer-column">
+
+						<h3>
+							EXPLORE
+						</h3>
+
+						<a href="about.html">
+							About
+						</a>
+
+						<a href="news.html">
+							News
+						</a>
+
+						<a href="archives.html">
+							Archives
+						</a>
+
+						<a href="youtube-project.html">
+							YouTube
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3>
+							PROJECTS
+						</h3>
+
+						<a href="projects.html">
+							Projects
+						</a>
+
+						<a href="northreach-project.html">
+							Northreach
+						</a>
+
+						<a href="library.html">
+							Books
+						</a>
+
+						<a href="music-project.html">
+							Music
+						</a>
+
+						<a href="smartpot-project.html">
+							Smart Pot
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3>
+							SUPPORT
+						</h3>
+
+						<a href="donate.html">
+							Donate
+						</a>
+
+						<a href="store.html">
+							Store
+						</a>
+
+						<a href="feedback.html">
+							Feedback
+						</a>
+
+						<a
+							href="https://discord.gg/FWcHdbuw4"
+							target="_blank"
+							rel="noopener noreferrer"
+                    >
+							Discord
+						</a>
+
+						<a
+						 href="https://www.youtube.com/@MoonwakeEntertainment"
+						 target="_blank"
+						 rel="noopener noreferrer"
+						>
+							YouTube
+						</a>
+
+					</div>
+
+				</nav>
+
+			</div>
+
+
+			<div class="moonwake-footer-bottom">
+
+				<p>
+					© 2026 Moonwake Entertainment
+				</p>
+
+				<p>
+					CREATING WORLDS BEYOND THE MAP
+				</p>
+
+			</div>
+
+		</footer>
+
+
+		<script src="script.js"></script>
+
+		<script>
+
+			/* Chapter modal */
+
+			const chapterDialog =
+			document.getElementById("chapterDialog");
+
+			const readChapterButton =
+			document.getElementById("readChapterButton");
+
+			const closeChapterButton =
+			document.getElementById("closeChapterButton");
+
+
+			readChapterButton.addEventListener("click", () => {
+			chapterDialog.showModal();
+			});
+
+
+			closeChapterButton.addEventListener("click", () => {
+			chapterDialog.close();
+			});
+
+
+			chapterDialog.addEventListener("click", (event) => {
+
+			if (event.target === chapterDialog) {
+			chapterDialog.close();
+			}
+
+			});
+
+		</script>
+
+	</body>
+
+</html>
+

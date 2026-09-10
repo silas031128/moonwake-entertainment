@@ -68,3 +68,15 @@ if (feedbackForm) {
     });
 
 }
+
+const chapterDialog = document.getElementById("chapterDialog");
+const readChapterButton = document.getElementById("readChapterButton");
+const closeChapterButton = document.getElementById("closeChapterButton");
+
+readChapterButton.addEventListener("click", () => {
+    chapterDialog.showModal();
+});
+
+closeChapterButton.addEventListener("click", () => {
+    chapterDialog.close();
+});
