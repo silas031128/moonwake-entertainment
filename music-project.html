@@ -1,77 +1,163 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<title>Moonwake Music</title>
+
 		<link rel="icon" href="Images/moonwake-favicon.png" type="image/png" />
+
 		<link rel="stylesheet" href="style.css" />
+
 	</head>
+
 
 	<body>
 
+
 		<header class="home-header">
-			<h1>MOONWAKE MUSIC</h1>
-			<h2>MOONWAKE PROJECT RECORD</h2>
+
+			<h1 data-i18n="moonwakeMusic">
+				MOONWAKE MUSIC
+			</h1>
+
+			<h2 data-i18n="moonwakeProjectRecord">
+				MOONWAKE PROJECT RECORD
+			</h2>
+
 		</header>
 
+
 		<main class="project-page">
+
 
 			<div class="project-record-status">
 
 				<p>
-					PROJECT ID: <span>PRJ-003</span>
+					<span data-i18n="projectId">
+						PROJECT ID:
+					</span>
+
+					<span>
+						PRJ-003
+					</span>
 				</p>
+
+
 				<p>
-					STATUS: <span>IN DEVELOPMENT</span>
+					<span data-i18n="status">
+						STATUS:
+					</span>
+
+					<span data-i18n="inDevelopment">
+						IN DEVELOPMENT
+					</span>
 				</p>
+
+
 				<p>
-					TYPE: <span>MUSIC</span>
+					<span data-i18n="type">
+						TYPE:
+					</span>
+
+					<span data-i18n="music">
+						MUSIC
+					</span>
 				</p>
+
+
 				<p>
-					CREATOR: <span>GADIEL GUZMAN</span>
+					<span data-i18n="creator">
+						CREATOR:
+					</span>
+
+					<span>
+						GADIEL GUZMAN
+					</span>
 				</p>
 
 			</div>
 
+
 			<article class="project-record">
 
-				<div class="project-code">
+
+				<div
+					class="project-code"
+					data-i18n="musicProjectCode"
+				>
 					PRJ-003 • PROJECT RECORD
 				</div>
 
-				<h2>MOONWAKE MUSIC</h2>
 
-				<p>
+				<h2 data-i18n="moonwakeMusic">
+					MOONWAKE MUSIC
+				</h2>
+
+
+				<p data-i18n="musicDescription1">
 					Moonwake Music is the original music project of
 					Moonwake Entertainment, created for games, stories,
 					videos, and other future projects.
 				</p>
 
-				<p>
+
+				<p data-i18n="musicDescription2">
 					The project includes original themes, atmospheric
 					tracks, character themes, environmental music,
 					and other compositions created for the Moonwake
 					universe.
 				</p>
 
+
 				<div class="project-section">
 
-					<h3>MUSIC PROJECTS</h3>
+
+					<h3 data-i18n="musicProjects">
+						MUSIC PROJECTS
+					</h3>
+
 
 					<ul>
-						<li>Northreach: The Atlas OST</li>
-						<li>Moonwake original themes</li>
-						<li>Environmental and biome music</li>
-						<li>Character themes</li>
-						<li>Future standalone releases</li>
+
+						<li data-i18n="northreachOst">
+							Northreach: The Atlas OST
+						</li>
+
+						<li data-i18n="moonwakeOriginalThemes">
+							Moonwake original themes
+						</li>
+
+						<li data-i18n="environmentalBiomeMusic">
+							Environmental and biome music
+						</li>
+
+						<li data-i18n="characterThemes">
+							Character themes
+						</li>
+
+						<li data-i18n="futureStandaloneReleases">
+							Future standalone releases
+						</li>
+
 					</ul>
 
 				</div>
 
+
 				<div class="project-section">
 
-					<h3>CURRENT STATUS</h3>
 
-					<p>
+					<h3 data-i18n="currentStatus">
+						CURRENT STATUS
+					</h3>
+
+
+					<p data-i18n="musicCurrentStatus">
 						Moonwake Music is currently in development.
 						Tracks will be added to the Moonwake Library
 						as they are completed.
@@ -79,127 +165,308 @@
 
 				</div>
 
+
 				<div class="project-note">
 
-					<span>MUSIC RECORD</span>
+
+					<span data-i18n="musicRecord">
+						MUSIC RECORD
+					</span>
+
 
 					<p>
-						MOONWAKE MUSIC
+
+						<span data-i18n="moonwakeMusic">
+							MOONWAKE MUSIC
+						</span>
+
 						<br>
-							STATUS: IN DEVELOPMENT
+
+							<span data-i18n="status">
+								STATUS:
+							</span>
+
+							<span data-i18n="inDevelopment">
+								IN DEVELOPMENT
+							</span>
+
 							</br>
-						PROJECT: PRJ-003
-					</p>
+
+								<span data-i18n="project">
+									PROJECT:
+								</span>
+
+								PRJ-003
+
+							</p>
 
 				</div>
 
+
 			</article>
+
 
 		</main>
 
+
 		<a href="projects.html">
-			<button>RETURN TO PROJECTS</button>
+
+			<button data-i18n="returnToProjects">
+				RETURN TO PROJECTS
+			</button>
+
 		</a>
+
 
 		<footer class="moonwake-footer">
 
+
 			<div class="moonwake-footer-main">
 
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button type="button" data-language="en">
+							🇺🇸 English
+						</button>
+
+						<button type="button" data-language="es">
+							🇪🇸 Español
+						</button>
+
+						<button type="button" data-language="ht">
+							🇭🇹 Kreyòl
+						</button>
+
+						<button type="button" data-language="zh">
+							🇨🇳 中文
+						</button>
+
+						<button type="button" data-language="pt">
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button type="button" class="language-button">
+						EN <span>›</span>
+					</button>
+
+				</div>
+
+
 				<div class="moonwake-footer-brand">
+
 
 					<img
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
+
 
 					<div class="footer-brand-text">
+
 
 						<p class="footer-name">
 							MOONWAKE ENTERTAINMENT
 						</p>
 
-						<p class="footer-tagline">
+
+						<p
+							class="footer-tagline"
+							data-i18n="tagline"
+						>
 							CREATING WORLDS BEYOND THE MAP
 						</p>
 
+
 					</div>
+
 
 				</div>
 
 
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
+
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
+
+
+						<a
+							href="about.html"
+							data-i18n="about"
+						>
+							About
+						</a>
+
+
+						<a
+							href="news.html"
+							data-i18n="news"
+						>
+							News
+						</a>
+
+
+						<a
+							href="archives.html"
+							data-i18n="archives"
+						>
+							Archives
+						</a>
+
+
+						<a
+							href="youtube-project.html"
+							data-i18n="youtube"
+						>
+							YouTube
+						</a>
+
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
+
+
+						<a
+							href="projects.html"
+							data-i18n="projects"
+						>
+							Projects
+						</a>
+
+
+						<a href="northreach-project.html">
+							Northreach
+						</a>
+
+
+						<a
+							href="library.html"
+							data-i18n="books"
+						>
+							Books
+						</a>
+
+
+						<a
+							href="music-project.html"
+							data-i18n="music"
+						>
+							Music
+						</a>
+
+
+						<a
+							href="smartpot-project.html"
+							data-i18n="smartPot"
+						>
+							Smart Pot
+						</a>
+
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
+
+
+						<a
+							href="donate.html"
+							data-i18n="donate"
+						>
+							Donate
+						</a>
+
+
+						<a
+							href="store.html"
+							data-i18n="store"
+						>
+							Store
+						</a>
+
+
+						<a
+							href="feedback.html"
+							data-i18n="feedback"
+						>
+							Feedback
+						</a>
+
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+						>
 							Discord
 						</a>
+
 
 						<a
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
+							data-i18n="youtube"
 						>
 							YouTube
 						</a>
 
+
 					</div>
 
+
 				</nav>
+
 
 			</div>
 
 
 			<div class="moonwake-footer-bottom">
 
+
 				<p>
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
+
 			</div>
+
 
 		</footer>
 
 
+		<script src="script.js"></script>
+
+
 	</body>
+
 </html>

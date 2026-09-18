@@ -1,7 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>Support Moonwake</title>
 		<link rel="icon" href="Images/moonwake-favicon.png" type="image/png" />
 		<link rel="stylesheet" href="style.css" />
@@ -10,21 +14,28 @@
 	<body>
 
 		<header class="home-header">
-			<h1>DONATE</h1>
-			<h2>SUPPORT MOONWAKE ENTERTAINMENT</h2>
+			<h1 data-i18n="donate">DONATE</h1>
+			<h2 data-i18n="supportMoonwakeEntertainment">
+				SUPPORT MOONWAKE ENTERTAINMENT
+			</h2>
 		</header>
 
 		<main class="support-page">
 
 			<div class="support-status-panel">
 				<p>
-					MOONWAKE STATUS: <span>ACTIVE</span>
+					<span data-i18n="moonwakeStatus">MOONWAKE STATUS:</span>
+					<span data-i18n="active">ACTIVE</span>
 				</p>
+
 				<p>
-					DONATION SYSTEM: <span>PREPARING</span>
+					<span data-i18n="donationSystem">DONATION SYSTEM:</span>
+					<span data-i18n="preparing">PREPARING</span>
 				</p>
+
 				<p>
-					LAST UPDATED: <span>SEPTEMBER 2026</span>
+					<span data-i18n="lastUpdated">LAST UPDATED:</span>
+					<span>SEPTEMBER 2026</span>
 				</p>
 			</div>
 
@@ -34,27 +45,35 @@
 
 				<div class="support-line"></div>
 
-				<h2>SUPPORT MOONWAKE</h2>
+				<h2 data-i18n="supportMoonwake">
+					SUPPORT MOONWAKE
+				</h2>
 
-				<p class="support-lead">
+				<p
+					class="support-lead"
+					data-i18n="supportLead"
+				>
 					HELP BUILD THE WORLDS BEYOND THE MAP.
 				</p>
 
-				<p>
+				<p data-i18n="supportDescription1">
 					Your support will help Moonwake Entertainment continue
 					developing games, music, stories, experiments, and future
 					creative projects.
 				</p>
 
-				<p>
+				<p data-i18n="supportDescription2">
 					Support may also help fund development equipment,
 					software, production costs, and other resources used
 					to create future Moonwake projects.
 				</p>
 
 				<div class="support-notice">
-					<strong>DONATIONS ARE CURRENTLY UNAVAILABLE</strong>
-					<p>
+					<strong data-i18n="donationsUnavailable">
+						DONATIONS ARE CURRENTLY UNAVAILABLE
+					</strong>
+
+					<p data-i18n="donationNotice">
 						The Moonwake donation system is currently being
 						prepared. Donation options will appear here when
 						the system is ready.
@@ -67,14 +86,30 @@
 
 				<div class="support-code">MW-SUPPORT-002</div>
 
-				<h3>WHERE SUPPORT GOES</h3>
+				<h3 data-i18n="whereSupportGoes">
+					WHERE SUPPORT GOES
+				</h3>
 
 				<ul class="support-list">
-					<li>GAME DEVELOPMENT</li>
-					<li>MUSIC &amp; AUDIO</li>
-					<li>CREATIVE SOFTWARE &amp; TOOLS</li>
-					<li>DEVELOPMENT EQUIPMENT</li>
-					<li>FUTURE MOONWAKE PROJECTS</li>
+					<li data-i18n="gameDevelopment">
+						GAME DEVELOPMENT
+					</li>
+
+					<li data-i18n="musicAudio">
+						MUSIC &amp; AUDIO
+					</li>
+
+					<li data-i18n="creativeSoftwareTools">
+						CREATIVE SOFTWARE &amp; TOOLS
+					</li>
+
+					<li data-i18n="developmentEquipment">
+						DEVELOPMENT EQUIPMENT
+					</li>
+
+					<li data-i18n="futureMoonwakeProjects">
+						FUTURE MOONWAKE PROJECTS
+					</li>
 				</ul>
 
 			</section>
@@ -82,107 +117,214 @@
 		</main>
 
 		<a href="index.html">
-			<button>RETURN</button>
+			<button data-i18n="return">
+				RETURN
+			</button>
 		</a>
 
 		<footer class="moonwake-footer">
 
-		<div class="moonwake-footer-main">
+			<div class="moonwake-footer-main">
 
-			<div class="moonwake-footer-brand">
+				<div class="footer-language">
 
-				<img
-					src="Images/moonwake-favicon.png"
-					alt="Moonwake Entertainment"
-					class="footer-logo"
-			/>
+					<div class="language-menu">
 
-				<div class="footer-brand-text">
+						<button
+							type="button"
+							data-language="en"
+						>
+							🇺🇸 English
+						</button>
 
-					<p class="footer-name">
-						MOONWAKE ENTERTAINMENT
-					</p>
+						<button
+							type="button"
+							data-language="es"
+						>
+							🇪🇸 Español
+						</button>
 
-					<p class="footer-tagline">
-						CREATING WORLDS BEYOND THE MAP
-					</p>
+						<button
+							type="button"
+							data-language="ht"
+						>
+							🇭🇹 Kreyòl
+						</button>
+
+						<button
+							type="button"
+							data-language="zh"
+						>
+							🇨🇳 中文
+						</button>
+
+						<button
+							type="button"
+							data-language="pt"
+						>
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button
+						type="button"
+						class="language-button"
+					>
+						EN <span>›</span>
+					</button>
 
 				</div>
 
-			</div>
+				<div class="moonwake-footer-brand">
 
+					<img
+						src="Images/moonwake-favicon.png"
+						alt="Moonwake Entertainment"
+						class="footer-logo"
+					/>
 
-			<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+					<div class="footer-brand-text">
 
-				<div class="footer-column">
+						<p class="footer-name">
+							MOONWAKE ENTERTAINMENT
+						</p>
 
-					<h3>EXPLORE</h3>
+						<p
+							class="footer-tagline"
+							data-i18n="tagline"
+						>
+							CREATING WORLDS BEYOND THE MAP
+						</p>
 
-					<a href="about.html">About</a>
-					<a href="news.html">News</a>
-					<a href="archives.html">Archives</a>
-					<a href="youtube-project.html">YouTube</a>
-
-				</div>
-
-
-				<div class="footer-column">
-
-					<h3>PROJECTS</h3>
-
-					<a href="projects.html">Projects</a>
-					<a href="northreach-project.html">Northreach</a>
-					<a href="library.html">Books</a>
-					<a href="music-project.html">Music</a>
-					<a href="smartpot-project.html">Smart Pot</a>
+					</div>
 
 				</div>
 
-
-				<div class="footer-column">
-
-					<h3>SUPPORT</h3>
-
-					<a href="donate.html">Donate</a>
-					<a href="store.html">Store</a>
-					<a href="feedback.html">Feedback</a>
-
-					<a
-						href="https://discord.gg/FWcHdbuw4"
-						target="_blank"
-						rel="noopener noreferrer"
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
 				>
-						Discord
-					</a>
 
-					<a
+					<div class="footer-column">
+
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
+
+						<a
+							href="about.html"
+							data-i18n="about"
+						>
+							About
+						</a>
+
+						<a
+							href="news.html"
+							data-i18n="news"
+						>
+							News
+						</a>
+
+						<a
+							href="archives.html"
+							data-i18n="archives"
+						>
+							Archives
+						</a>
+
+						<a
+							href="youtube-project.html"
+							data-i18n="youtube"
+						>
+							YouTube
+						</a>
+
+					</div>
+
+					<div class="footer-column">
+
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
+
+						<a href="projects.html" data-i18n="projects">
+							Projects
+						</a>
+
+						<a href="northreach-project.html">
+							Northreach
+						</a>
+
+						<a href="library.html" data-i18n="books">
+							Books
+						</a>
+
+						<a href="music-project.html" data-i18n="music">
+							Music
+						</a>
+
+						<a href="smartpot-project.html" data-i18n="smartPot">
+							Smart Pot
+						</a>
+
+					</div>
+
+					<div class="footer-column">
+
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
+
+						<a href="donate.html" data-i18n="donate">
+							Donate
+						</a>
+
+						<a href="store.html" data-i18n="store">
+							Store
+						</a>
+
+						<a href="feedback.html" data-i18n="feedback">
+							Feedback
+						</a>
+
+						<a
+							href="https://discord.gg/FWcHdbuw4"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Discord
+						</a>
+
+						<a
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-						YouTube
-					</a>
+							YouTube
+						</a>
 
-				</div>
+					</div>
 
-			</nav>
+				</nav>
 
-		</div>
+			</div>
 
+			<div class="moonwake-footer-bottom">
 
-		<div class="moonwake-footer-bottom">
+				<p>
+					© 2026 Moonwake Entertainment
+				</p>
 
-			<p>
-				© 2026 Moonwake Entertainment
-			</p>
+				<p data-i18n="tagline">
+					CREATING WORLDS BEYOND THE MAP
+				</p>
 
-			<p>
-				CREATING WORLDS BEYOND THE MAP
-			</p>
+			</div>
 
-		</div>
+		</footer>
 
-	</footer>
+		<script src="script.js"></script>
 
 	</body>
 </html>

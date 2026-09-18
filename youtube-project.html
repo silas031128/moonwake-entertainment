@@ -9,8 +9,8 @@
 	<body>
 
 		<header class="home-header">
-			<h1>YOUTUBE</h1>
-			<h2>MOONWAKE PROJECT RECORD</h2>
+			<h1 data-i18n="youtube">YOUTUBE</h1>
+			<h2 data-i18n="moonwakeProjectRecord">MOONWAKE PROJECT RECORD</h2>
 		</header>
 
 		<main class="project-page">
@@ -18,16 +18,23 @@
 			<div class="project-record-status">
 
 				<p>
-					PROJECT ID: <span>PRJ-005</span>
+					<span data-i18n="projectIdLabel">PROJECT ID:</span>
+					<span>PRJ-005</span>
 				</p>
+
 				<p>
-					STATUS: <span>ACTIVE</span>
+					<span data-i18n="statusLabel">STATUS:</span>
+					<span data-i18n="active">ACTIVE</span>
 				</p>
+
 				<p>
-					TYPE: <span>MEDIA</span>
+					<span data-i18n="typeLabel">TYPE:</span>
+					<span data-i18n="media">MEDIA</span>
 				</p>
+
 				<p>
-					CREATOR: <span>@MoonwakeEntertainment</span>
+					<span data-i18n="creatorLabel">CREATOR:</span>
+					<span>@MoonwakeEntertainment</span>
 				</p>
 
 			</div>
@@ -35,18 +42,18 @@
 			<article class="project-record">
 
 				<div class="project-code">
-					PRJ-005 • PROJECT RECORD
+					PRJ-005 • <span data-i18n="projectRecord">PROJECT RECORD</span>
 				</div>
 
-				<h2>YOUTUBE</h2>
+				<h2 data-i18n="youtube">YOUTUBE</h2>
 
-				<p>
+				<p data-i18n="youtubeDescription1">
 					The Moonwake YouTube project is a media platform
 					for gaming, creative projects, experiments, and
 					other content created by Silas.
 				</p>
 
-				<p>
+				<p data-i18n="youtubeDescription2">
 					The channel also provides a place to document
 					Moonwake projects and share their development
 					with viewers.
@@ -54,24 +61,28 @@
 
 				<div class="project-section">
 
-					<h3>CONTENT</h3>
+					<h3 data-i18n="content">CONTENT</h3>
 
 					<ul>
-						<li>Minecraft</li>
-						<li>Gaming</li>
-						<li>Creative projects</li>
-						<li>Development updates</li>
-						<li>Experiments</li>
-						<li>Future Moonwake content</li>
+						<li data-i18n="minecraft">Minecraft</li>
+						<li data-i18n="gaming">Gaming</li>
+						<li data-i18n="creativeProjects">Creative projects</li>
+						<li data-i18n="developmentUpdates">
+							Development updates
+						</li>
+						<li data-i18n="experiments">Experiments</li>
+						<li data-i18n="futureMoonwakeContent">
+							Future Moonwake content
+						</li>
 					</ul>
 
 				</div>
 
 				<div class="project-section">
 
-					<h3>CURRENT STATUS</h3>
+					<h3 data-i18n="currentStatus">CURRENT STATUS</h3>
 
-					<p>
+					<p data-i18n="youtubeCurrentStatus">
 						The YouTube project is currently active.
 						New videos and other content will be added
 						as the channel continues to grow.
@@ -81,15 +92,15 @@
 
 				<div class="project-note">
 
-					<span>MEDIA RECORD</span>
+					<span data-i18n="mediaRecord">MEDIA RECORD</span>
 
 					<p>
-						YOUTUBE
+						<span data-i18n="youtube">YOUTUBE</span>
 						<br>
-							STATUS: ACTIVE
+							<span data-i18n="statusActive">STATUS: ACTIVE</span>
 							</br>
-						PROJECT: PRJ-005
-					</p>
+								<span data-i18n="projectPrj005">PROJECT: PRJ-005</span>
+							</p>
 
 				</div>
 
@@ -98,10 +109,44 @@
 		</main>
 
 		<a href="projects.html">
-			<button>RETURN TO PROJECTS</button>
+			<button data-i18n="returnToProjects">
+				RETURN TO PROJECTS
+			</button>
 		</a>
 
 		<footer class="moonwake-footer">
+
+			<div class="footer-language">
+
+				<div class="language-menu">
+
+					<button type="button" data-language="en">
+						🇺🇸 English
+					</button>
+
+					<button type="button" data-language="es">
+						🇪🇸 Español
+					</button>
+
+					<button type="button" data-language="ht">
+						🇭🇹 Kreyòl
+					</button>
+
+					<button type="button" data-language="zh">
+						🇨🇳 中文
+					</button>
+
+					<button type="button" data-language="pt">
+						🇧🇷 Português
+					</button>
+
+				</div>
+
+				<button type="button" class="language-button">
+					EN <span>›</span>
+				</button>
+
+			</div>
 
 			<div class="moonwake-footer-main">
 
@@ -111,7 +156,7 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
 
 					<div class="footer-brand-text">
 
@@ -127,47 +172,80 @@
 
 				</div>
 
-
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
+						<h3 data-i18n="explore">EXPLORE</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<a href="about.html" data-i18n="about">About</a>
+						<a href="news.html" data-i18n="news">News</a>
+						<a href="archives.html" data-i18n="archives">
+							Archives
+						</a>
+						<a href="youtube-project.html" data-i18n="youtube">
+							YouTube
+						</a>
 
 					</div>
 
-
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
+						<h3 data-i18n="projects">PROJECTS</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<a href="projects.html" data-i18n="projects">
+							Projects
+						</a>
+
+						<a
+							href="northreach-project.html"
+							data-i18n="northreach"
+						>
+							Northreach
+						</a>
+
+						<a href="library.html" data-i18n="books">
+							Books
+						</a>
+
+						<a href="music-project.html" data-i18n="music">
+							Music
+						</a>
+
+						<a
+							href="smartpot-project.html"
+							data-i18n="smartPot"
+						>
+							Smart Pot
+						</a>
 
 					</div>
 
-
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
+						<h3 data-i18n="support">SUPPORT</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<a href="donate.html" data-i18n="donate">
+							Donate
+						</a>
+
+						<a href="store.html" data-i18n="store">
+							Store
+						</a>
+
+						<a href="feedback.html" data-i18n="feedback">
+							Feedback
+						</a>
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+							data-i18n="discord"
+						>
 							Discord
 						</a>
 
@@ -175,6 +253,7 @@
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
+							data-i18n="youtube"
 						>
 							YouTube
 						</a>
@@ -185,20 +264,21 @@
 
 			</div>
 
-
 			<div class="moonwake-footer-bottom">
 
-				<p>
+				<p data-i18n="copyright">
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
 			</div>
 
 		</footer>
+
+		<script src="script.js"></script>
 
 	</body>
 </html>

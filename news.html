@@ -1,278 +1,567 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
 		<title>Moonwake News</title>
-		<link rel="icon" href="Images/moonwake-favicon.png" type="image/png" />
-		<link rel="stylesheet" href="style.css" />
+
+		<link
+			rel="icon"
+			href="Images/moonwake-favicon.png"
+			type="image/png"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+
 	</head>
 
 	<body>
 
 		<header class="home-header">
-			<h1>NEWS</h1>
-			<h2>MOONWAKE DEVELOPMENT LOG</h2>
+
+			<h1 data-i18n="news">
+				NEWS
+			</h1>
+
+			<h2 data-i18n="moonwakeDevelopmentLog">
+				MOONWAKE DEVELOPMENT LOG
+			</h2>
+
 		</header>
+
 
 		<main class="news-page">
 
 			<div class="news-status-panel">
+
 				<p>
-					NEWS DATABASE: <span>ONLINE</span>
+					<span data-i18n="newsDatabase">
+						NEWS DATABASE:
+					</span>
+
+					<span data-i18n="online">
+						ONLINE
+					</span>
 				</p>
+
 				<p>
-					UPDATES DOCUMENTED: <span>02</span>
+					<span data-i18n="updatesDocumented">
+						UPDATES DOCUMENTED:
+					</span>
+
+					<span>
+						02
+					</span>
 				</p>
+
 				<p>
-					LAST UPDATED: <span>SEPTEMBER 2026</span>
+					<span data-i18n="lastUpdated">
+						LAST UPDATED:
+					</span>
+
+					<span data-i18n="september2026">
+						SEPTEMBER 2026
+					</span>
 				</p>
+
 			</div>
 
 
 			<div class="news-container">
-				<div class="news-container"/>
 
-					<article class="news-paper news-paper-featured">
 
-						<div class="news-paper-top">
-							<span>NEWS-001</span>
-							<span>SEPTEMBER 2026</span>
-						</div>
+				<article class="news-paper news-paper-featured">
 
-						<div class="news-paper-line"></div>
+					<div class="news-paper-top">
 
-						<span class="news-paper-tag">
-							DEVELOPMENT
+						<span>
+							NEWS-001
 						</span>
 
-						<h3>THE MOONWAKE WEBSITE BEGINS</h3>
-
-						<p class="news-paper-lead">
-							MOONWAKE ENTERTAINMENT ENTERS A NEW ERA.
-						</p>
-
-						<p>
-							The official Moonwake website is now online.
-							The website serves as a central hub for projects,
-							stories, music, archives, and future Moonwake creations.
-						</p>
-
-						<a href="news-001.html">
-							READ ARTICLE →
-						</a>
-
-						<div class="news-paper-footer">
-							MOONWAKE ENTERTAINMENT • 2026
-						</div>
-
-					</article>
-
-
-					<article class="news-paper">
-
-						<div class="news-paper-top">
-							<span>NEWS-002</span>
-							<span>SEPTEMBER 2026</span>
-						</div>
-
-						<div class="news-paper-line"></div>
-
-						<span class="news-paper-tag">
-							LIBRARY
+						<span data-i18n="september2026">
+							SEPTEMBER 2026
 						</span>
 
-						<h3>THE PLACES THAT SHOULDN'T EXIST</h3>
-
-						<p class="news-paper-lead">
-							A NEW STORY ENTERS THE MOONWAKE LIBRARY.
-						</p>
-
-						<p>
-							The Places That Shouldn't Exist has been completed
-							and added to the Moonwake Library.
-						</p>
-
-						<a href="news-002.html">
-							READ ARTICLE →
-						</a>
-
-						<div class="news-paper-footer">
-							MOONWAKE ENTERTAINMENT • 2026
-						</div>
-
-					</article>
+					</div>
 
 
-					<article class="news-paper news-paper-coming-soon">
-
-						<div class="news-paper-top">
-							<span>NEWS-003</span>
-							<span>CLASSIFIED</span>
-						</div>
-
-						<div class="news-paper-line"></div>
-
-						<span class="news-paper-tag">
-							FUTURE
-						</span>
-
-						<h3>COMING SOON</h3>
-
-						<p class="news-paper-lead">
-							THE NEXT TRANSMISSION HAS NOT YET ARRIVED.
-						</p>
-
-						<p>
-							A new Moonwake development update will appear here
-							when the next major milestone is reached.
-						</p>
-
-						<div class="news-paper-footer">
-							MOONWAKE ENTERTAINMENT • PENDING
-						</div>
-
-					</article>
-
-				</div>
-		</main>
-		
-		<section class="newsletter">
-
-    <div class="news-code">
-        MOONWAKE NEWSLETTER
-    </div>
-
-    <h2>STAY UPDATED</h2>
-
-    <p>
-        Get notified when new Moonwake news is published.
-    </p>
-
-    <form
-    id="newsletter-form"
-    action="https://formspree.io/f/xnpqbeob"
-    method="POST"
->
-		
-        <label for="newsletter-email">EMAIL ADDRESS</label>
-
-        <input
-            type="email"
-            id="newsletter-email"
-            name="email"
-            placeholder="you@example.com"
-            required=""
-        />
-
-        <button type="submit">SUBSCRIBE</button>
-    </form>
-			
-	<p id="newsletter-message"></p>
-
-</section>
+					<div class="news-paper-line"></div>
 
 
-		<a href="index.html">
-			<button>RETURN</button>
-		</a>
+					<span
+						class="news-paper-tag"
+						data-i18n="development"
+					>
+						DEVELOPMENT
+					</span>
 
-		<footer class="moonwake-footer">
 
-		<div class="moonwake-footer-main">
+					<h3 data-i18n="websiteBegins">
+						THE MOONWAKE WEBSITE BEGINS
+					</h3>
 
-			<div class="moonwake-footer-brand">
 
-				<img
-					src="Images/moonwake-favicon.png"
-					alt="Moonwake Entertainment"
-					class="footer-logo"
-			/>
-
-				<div class="footer-brand-text">
-
-					<p class="footer-name">
-						MOONWAKE ENTERTAINMENT
+					<p
+						class="news-paper-lead"
+						data-i18n="news001Lead"
+					>
+						MOONWAKE ENTERTAINMENT ENTERS A NEW ERA.
 					</p>
 
-					<p class="footer-tagline">
-						CREATING WORLDS BEYOND THE MAP
+
+					<p data-i18n="news001Summary">
+						The official Moonwake website is now online.
+						The website serves as a central hub for projects,
+						stories, music, archives, and future Moonwake creations.
 					</p>
 
-				</div>
+
+					<a
+						href="news-001.html"
+						data-i18n="readArticle"
+					>
+						READ ARTICLE →
+					</a>
+
+
+					<div class="news-paper-footer">
+						MOONWAKE ENTERTAINMENT • 2026
+					</div>
+
+				</article>
+
+
+				<article class="news-paper">
+
+					<div class="news-paper-top">
+
+						<span>
+							NEWS-002
+						</span>
+
+						<span data-i18n="september2026">
+							SEPTEMBER 2026
+						</span>
+
+					</div>
+
+
+					<div class="news-paper-line"></div>
+
+
+					<span
+						class="news-paper-tag"
+						data-i18n="library"
+					>
+						LIBRARY
+					</span>
+
+
+					<h3 data-i18n="placesThatShouldntExist">
+						THE PLACES THAT SHOULDN'T EXIST
+					</h3>
+
+
+					<p
+						class="news-paper-lead"
+						data-i18n="news002Lead"
+					>
+						A NEW STORY ENTERS THE MOONWAKE LIBRARY.
+					</p>
+
+
+					<p data-i18n="news002Summary">
+						The Places That Shouldn't Exist has been completed
+						and added to the Moonwake Library.
+					</p>
+
+
+					<a
+						href="news-002.html"
+						data-i18n="readArticle"
+					>
+						READ ARTICLE →
+					</a>
+
+
+					<div class="news-paper-footer">
+						MOONWAKE ENTERTAINMENT • 2026
+					</div>
+
+				</article>
+
+
+				<article class="news-paper news-paper-coming-soon">
+
+					<div class="news-paper-top">
+
+						<span>
+							NEWS-003
+						</span>
+
+						<span data-i18n="classified">
+							CLASSIFIED
+						</span>
+
+					</div>
+
+
+					<div class="news-paper-line"></div>
+
+
+					<span
+						class="news-paper-tag"
+						data-i18n="future"
+					>
+						FUTURE
+					</span>
+
+
+					<h3 data-i18n="comingSoon">
+						COMING SOON
+					</h3>
+
+
+					<p
+						class="news-paper-lead"
+						data-i18n="news003Lead"
+					>
+						THE NEXT TRANSMISSION HAS NOT YET ARRIVED.
+					</p>
+
+
+					<p data-i18n="news003Summary">
+						A new Moonwake development update will appear here
+						when the next major milestone is reached.
+					</p>
+
+
+					<div class="news-paper-footer">
+						<span data-i18n="moonwakeEntertainment">
+							MOONWAKE ENTERTAINMENT
+						</span>
+
+						•
+
+						<span data-i18n="pending">
+							PENDING
+						</span>
+					</div>
+
+				</article>
 
 			</div>
 
-
-			<nav class="moonwake-footer-nav" aria-label="Footer navigation">
-
-				<div class="footer-column">
-
-					<h3>EXPLORE</h3>
-
-					<a href="about.html">About</a>
-					<a href="news.html">News</a>
-					<a href="archives.html">Archives</a>
-					<a href="youtube-project.html">YouTube</a>
-
-				</div>
+		</main>
 
 
-				<div class="footer-column">
+		<section class="newsletter">
 
-					<h3>PROJECTS</h3>
-
-					<a href="projects.html">Projects</a>
-					<a href="northreach-project.html">Northreach</a>
-					<a href="library.html">Books</a>
-					<a href="music-project.html">Music</a>
-					<a href="smartpot-project.html">Smart Pot</a>
-
-				</div>
+			<div class="news-code">
+				MOONWAKE NEWSLETTER
+			</div>
 
 
-				<div class="footer-column">
+			<h2 data-i18n="stayUpdated">
+				STAY UPDATED
+			</h2>
 
-					<h3>SUPPORT</h3>
 
-					<a href="donate.html">Donate</a>
-					<a href="store.html">Store</a>
-					<a href="feedback.html">Feedback</a>
+			<p data-i18n="newsletterDescription">
+				Get notified when new Moonwake news is published.
+			</p>
 
-					<a
-						href="https://discord.gg/FWcHdbuw4"
-						target="_blank"
-						rel="noopener noreferrer"
+
+			<form
+				id="newsletter-form"
+				action="https://formspree.io/f/xnpqbeob"
+				method="POST"
+			>
+
+				<label
+					for="newsletter-email"
+					data-i18n="emailAddress"
 				>
-						Discord
-					</a>
+					EMAIL ADDRESS
+				</label>
 
-					<a
+
+				<input
+					type="email"
+					id="newsletter-email"
+					name="email"
+					data-i18n-placeholder="emailPlaceholder"
+					placeholder="you@example.com"
+					required=""
+				/>
+
+
+				<button
+					type="submit"
+					data-i18n="subscribe"
+				>
+					SUBSCRIBE
+				</button>
+
+			</form>
+
+
+			<p id="newsletter-message"></p>
+
+		</section>
+
+
+		<a href="index.html">
+
+			<button data-i18n="return">
+				RETURN
+			</button>
+
+		</a>
+
+
+		<footer class="moonwake-footer">
+
+			<div class="moonwake-footer-main">
+
+
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button
+							type="button"
+							data-language="en"
+						>
+							🇺🇸 English
+						</button>
+
+						<button
+							type="button"
+							data-language="es"
+						>
+							🇪🇸 Español
+						</button>
+
+						<button
+							type="button"
+							data-language="ht"
+						>
+							🇭🇹 Kreyòl
+						</button>
+
+						<button
+							type="button"
+							data-language="zh"
+						>
+							🇨🇳 中文
+						</button>
+
+						<button
+							type="button"
+							data-language="pt"
+						>
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+
+					<button
+						type="button"
+						class="language-button"
+					>
+						EN <span>›</span>
+					</button>
+
+				</div>
+
+
+				<div class="moonwake-footer-brand">
+
+					<img
+						src="Images/moonwake-favicon.png"
+						alt="Moonwake Entertainment"
+						class="footer-logo"
+					/>
+
+					<div class="footer-brand-text">
+
+						<p class="footer-name">
+							MOONWAKE ENTERTAINMENT
+						</p>
+
+						<p
+							class="footer-tagline"
+							data-i18n="tagline"
+						>
+							CREATING WORLDS BEYOND THE MAP
+						</p>
+
+					</div>
+
+				</div>
+
+
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
+
+					<div class="footer-column">
+
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
+
+						<a
+							href="about.html"
+							data-i18n="about"
+						>
+							About
+						</a>
+
+						<a
+							href="news.html"
+							data-i18n="news"
+						>
+							News
+						</a>
+
+						<a
+							href="archives.html"
+							data-i18n="archives"
+						>
+							Archives
+						</a>
+
+						<a
+							href="youtube-project.html"
+							data-i18n="youtube"
+						>
+							YouTube
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
+
+						<a
+							href="projects.html"
+							data-i18n="projects"
+						>
+							Projects
+						</a>
+
+						<a
+							href="northreach-project.html"
+							data-i18n="northreach"
+						>
+							Northreach
+						</a>
+
+						<a
+							href="library.html"
+							data-i18n="books"
+						>
+							Books
+						</a>
+
+						<a
+							href="music-project.html"
+							data-i18n="music"
+						>
+							Music
+						</a>
+
+						<a
+							href="smartpot-project.html"
+							data-i18n="smartPot"
+						>
+							Smart Pot
+						</a>
+
+					</div>
+
+
+					<div class="footer-column">
+
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
+
+						<a
+							href="donate.html"
+							data-i18n="donate"
+						>
+							Donate
+						</a>
+
+						<a
+							href="store.html"
+							data-i18n="store"
+						>
+							Store
+						</a>
+
+						<a
+							href="feedback.html"
+							data-i18n="feedback"
+						>
+							Feedback
+						</a>
+
+						<a
+							href="https://discord.gg/FWcHdbuw4"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							Discord
+						</a>
+
+						<a
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-						YouTube
-					</a>
+							YouTube
+						</a>
 
-				</div>
+					</div>
 
-			</nav>
+				</nav>
 
-		</div>
+			</div>
 
 
-		<div class="moonwake-footer-bottom">
+			<div class="moonwake-footer-bottom">
 
-			<p>
-				© 2026 Moonwake Entertainment
-			</p>
+				<p>
+					© 2026 Moonwake Entertainment
+				</p>
 
-			<p>
-				CREATING WORLDS BEYOND THE MAP
-			</p>
+				<p data-i18n="tagline">
+					CREATING WORLDS BEYOND THE MAP
+				</p>
 
-		</div>
+			</div>
 
-	</footer>
+		</footer>
+
 
 		<script src="script.js"></script>
 

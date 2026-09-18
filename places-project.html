@@ -1,32 +1,66 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
+
 	<head>
-		<title>The Places That Shouldn't Exist</title>
+
+		<meta charset="UTF-8" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
+		<title data-i18n="placesBookTitle">
+			The Places That Shouldn't Exist
+		</title>
+
 		<link rel="stylesheet" href="style.css" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			href="Images/moonwake-favicon.png"
+		/>
+
 	</head>
 
 	<body>
 
 		<header class="home-header">
-			<h1>THE PLACES THAT SHOULDN'T EXIST</h1>
-			<h2>MOONWAKE PROJECT RECORD</h2>
+
+			<h1 data-i18n="placesBookTitle">
+				THE PLACES THAT SHOULDN'T EXIST
+			</h1>
+
+			<h2 data-i18n="moonwakeProjectRecord">
+				MOONWAKE PROJECT RECORD
+			</h2>
+
 		</header>
+
 
 		<main class="project-page">
 
 			<div class="project-record-status">
 
 				<p>
-					PROJECT ID: <span>PRJ-002</span>
+					<span data-i18n="projectIdLabel">PROJECT ID:</span>
+					<span>PRJ-002</span>
 				</p>
+
 				<p>
-					STATUS: <span>COMPLETED</span>
+					<span data-i18n="statusLabel">STATUS:</span>
+					<span data-i18n="completed">COMPLETED</span>
 				</p>
+
 				<p>
-					TYPE: <span>NOVEL</span>
+					<span data-i18n="typeLabel">TYPE:</span>
+					<span data-i18n="novel">NOVEL</span>
 				</p>
+
 				<p>
-					AUTHOR: <span>GADIEL GUZMAN</span>
+					<span data-i18n="authorLabel">AUTHOR:</span>
+					<span data-i18n="authorName">GADIEL GUZMAN</span>
 				</p>
 
 			</div>
@@ -38,7 +72,9 @@
 					PRJ-002 • PROJECT RECORD
 				</div>
 
-				<h2>THE PLACES THAT SHOULDN'T EXIST</h2>
+				<h2 data-i18n="placesBookTitle">
+					THE PLACES THAT SHOULDN'T EXIST
+				</h2>
 
 				<img
 					class="project-cover"
@@ -46,13 +82,13 @@
 					alt="The Places That Shouldn't Exist book cover"
 				/>
 
-				<p>
+				<p data-i18n="placesProjectDescription1">
 					The Places That Shouldn't Exist is a psychological
 					horror novel following Silas as he discovers a town
 					that does not seem to follow the rules of reality.
 				</p>
 
-				<p>
+				<p data-i18n="placesProjectDescription2">
 					What begins as an ordinary town slowly becomes
 					something much stranger as familiar locations change,
 					people behave differently, and places appear where
@@ -62,13 +98,38 @@
 
 				<div class="project-section">
 
-					<h3>PROJECT DETAILS</h3>
+					<h3 data-i18n="projectDetails">
+						PROJECT DETAILS
+					</h3>
 
 					<ul>
-						<li>Genre: Psychological Horror</li>
-						<li>Format: Novel</li>
-						<li>Chapters: 20</li>
-						<li>Status: Completed</li>
+
+						<li>
+							<span data-i18n="genreLabel">Genre:</span>
+							<span data-i18n="psychologicalHorror">
+								Psychological Horror
+							</span>
+						</li>
+
+						<li>
+							<span data-i18n="formatLabel">Format:</span>
+							<span data-i18n="novel">
+								Novel
+							</span>
+						</li>
+
+						<li>
+							<span data-i18n="chaptersLabel">Chapters:</span>
+							<span>20</span>
+						</li>
+
+						<li>
+							<span data-i18n="statusLabel">Status:</span>
+							<span data-i18n="completed">
+								Completed
+							</span>
+						</li>
+
 					</ul>
 
 				</div>
@@ -76,9 +137,11 @@
 
 				<div class="project-section">
 
-					<h3>MOONWAKE LIBRARY</h3>
+					<h3 data-i18n="moonwakeLibrary">
+						MOONWAKE LIBRARY
+					</h3>
 
-					<p>
+					<p data-i18n="placesLibraryDescription">
 						The novel is the first completed volume in the
 						Moonwake Library.
 					</p>
@@ -88,15 +151,35 @@
 
 				<div class="project-note">
 
-					<span>LIBRARY RECORD</span>
+					<span data-i18n="libraryRecord">
+						LIBRARY RECORD
+					</span>
 
 					<p>
-						THE PLACES THAT SHOULDN'T EXIST
+
+						<span data-i18n="placesBookTitle">
+							THE PLACES THAT SHOULDN'T EXIST
+						</span>
+
 						<br>
-							STATUS: COMPLETED
+
+							<span data-i18n="statusLabel">
+								STATUS:
+							</span>
+
+							<span data-i18n="completed">
+								COMPLETED
+							</span>
+
 							</br>
-						LIBRARY VOLUME: 01
-					</p>
+
+								<span data-i18n="libraryVolume">
+									LIBRARY VOLUME:
+								</span>
+
+								01
+
+							</p>
 
 				</div>
 
@@ -106,12 +189,53 @@
 
 
 		<a href="projects.html">
-			<button>RETURN TO PROJECTS</button>
+
+			<button data-i18n="returnToProjects">
+				RETURN TO PROJECTS
+			</button>
+
 		</a>
+
 
 		<footer class="moonwake-footer">
 
 			<div class="moonwake-footer-main">
+
+
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button type="button" data-language="en">
+							🇺🇸 English
+						</button>
+
+						<button type="button" data-language="es">
+							🇪🇸 Español
+						</button>
+
+						<button type="button" data-language="ht">
+							🇭🇹 Kreyòl
+						</button>
+
+						<button type="button" data-language="zh">
+							🇨🇳 中文
+						</button>
+
+						<button type="button" data-language="pt">
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button type="button" class="language-button">
+
+						EN <span>›</span>
+
+					</button>
+
+				</div>
+
 
 				<div class="moonwake-footer-brand">
 
@@ -119,7 +243,7 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
 
 					<div class="footer-brand-text">
 
@@ -136,46 +260,88 @@
 				</div>
 
 
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<a href="about.html" data-i18n="about">
+							About
+						</a>
+
+						<a href="news.html" data-i18n="news">
+							News
+						</a>
+
+						<a href="archives.html" data-i18n="archives">
+							Archives
+						</a>
+
+						<a href="youtube-project.html" data-i18n="youtube">
+							YouTube
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<a href="projects.html" data-i18n="projects">
+							Projects
+						</a>
+
+						<a href="northreach-project.html" data-i18n="northreach">
+							Northreach
+						</a>
+
+						<a href="library.html" data-i18n="books">
+							Books
+						</a>
+
+						<a href="music-project.html" data-i18n="music">
+							Music
+						</a>
+
+						<a href="smartpot-project.html" data-i18n="smartPot">
+							Smart Pot
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<a href="donate.html" data-i18n="donate">
+							Donate
+						</a>
+
+						<a href="store.html" data-i18n="store">
+							Store
+						</a>
+
+						<a href="feedback.html" data-i18n="feedback">
+							Feedback
+						</a>
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+						>
 							Discord
 						</a>
 
@@ -200,7 +366,7 @@
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -208,5 +374,9 @@
 
 		</footer>
 
+
+		<script src="script.js"></script>
+
 	</body>
+
 </html>

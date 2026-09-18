@@ -1,6 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
 		<title>Moonwake Feedback</title>
 		<link rel="icon" href="Images/moonwake-favicon.png" type="image/png" />
 		<link rel="stylesheet" href="style.css" />
@@ -9,8 +14,10 @@
 	<body>
 
 		<header class="home-header">
-			<h1>FEEDBACK</h1>
-			<h2>MOONWAKE COMMUNICATION DATABASE</h2>
+			<h1 data-i18n="feedback">FEEDBACK</h1>
+			<h2 data-i18n="communicationDatabase">
+				MOONWAKE COMMUNICATION DATABASE
+			</h2>
 		</header>
 
 		<main class="feedback-page">
@@ -18,37 +25,50 @@
 			<div class="feedback-status-panel">
 
 				<p>
-					DATABASE STATUS: <span>ONLINE</span>
+					<span data-i18n="databaseStatus">DATABASE STATUS:</span>
+					<span data-i18n="online">ONLINE</span>
 				</p>
+
 				<p>
-					SUBMISSIONS: <span>OPEN</span>
+					<span data-i18n="submissions">SUBMISSIONS:</span>
+					<span data-i18n="open">OPEN</span>
 				</p>
+
 				<p>
-					ACCOUNT REQUIRED: <span>NO</span>
+					<span data-i18n="accountRequired">ACCOUNT REQUIRED:</span>
+					<span data-i18n="no">NO</span>
 				</p>
 
 			</div>
 
 			<article class="feedback-record">
 
-				<div class="feedback-code">
+				<div
+					class="feedback-code"
+					data-i18n="feedbackCode"
+				>
 					FEEDBACK • MW-FDBK
 				</div>
 
-				<h2>TELL MOONWAKE SOMETHING</h2>
+				<h2 data-i18n="tellMoonwakeSomething">
+					TELL MOONWAKE SOMETHING
+				</h2>
 
-				<p>
+				<p data-i18n="feedbackDescription">
 					Found a bug? Have an idea? Want to tell us
 					something about the website or a Moonwake project?
 				</p>
 
 				<form
-					  id="feedback-form"
-					  action="https://formspree.io/f/xoeqngka"
-					  method="POST"
-					>
+					id="feedback-form"
+					action="https://formspree.io/f/xoeqngka"
+					method="POST"
+				>
 
-					<label for="feedback-name">
+					<label
+						for="feedback-name"
+						data-i18n="nameNickname"
+					>
 						NAME / NICKNAME
 					</label>
 
@@ -57,9 +77,13 @@
 						id="feedback-name"
 						name="name"
 						placeholder="Optional"
+						data-i18n-placeholder="optional"
 					/>
 
-					<label for="feedback-email">
+					<label
+						for="feedback-email"
+						data-i18n="emailAddress"
+					>
 						EMAIL ADDRESS
 					</label>
 
@@ -68,9 +92,13 @@
 						id="feedback-email"
 						name="email"
 						placeholder="Optional"
+						data-i18n-placeholder="optional"
 					/>
 
-					<label for="feedback-category">
+					<label
+						for="feedback-category"
+						data-i18n="category"
+					>
 						CATEGORY
 					</label>
 
@@ -79,15 +107,53 @@
 						name="category"
 						required=""
 					>
-						<option value="">Select a category</option>
-						<option value="bug">Bug Report</option>
-						<option value="suggestion">Suggestion</option>
-						<option value="website">Website</option>
-						<option value="project">Project</option>
-						<option value="other">Other</option>
+						<option
+							value=""
+							data-i18n="selectCategory"
+						>
+							Select a category
+						</option>
+
+						<option
+							value="bug"
+							data-i18n="bugReport"
+						>
+							Bug Report
+						</option>
+
+						<option
+							value="suggestion"
+							data-i18n="suggestion"
+						>
+							Suggestion
+						</option>
+
+						<option
+							value="website"
+							data-i18n="website"
+						>
+							Website
+						</option>
+
+						<option
+							value="project"
+							data-i18n="project"
+						>
+							Project
+						</option>
+
+						<option
+							value="other"
+							data-i18n="other"
+						>
+							Other
+						</option>
 					</select>
 
-					<label for="feedback-message">
+					<label
+						for="feedback-message"
+						data-i18n="message"
+					>
 						MESSAGE
 					</label>
 
@@ -96,9 +162,13 @@
 						name="message"
 						placeholder="Write your feedback here..."
 						required=""
+						data-i18n-placeholder="writeFeedback"
 					></textarea>
 
-					<button type="submit">
+					<button
+						type="submit"
+						data-i18n="submitFeedback"
+					>
 						SUBMIT FEEDBACK
 					</button>
 
@@ -111,12 +181,64 @@
 		</main>
 
 		<a href="index.html">
-			<button>RETURN TO MOONWAKE</button>
+			<button data-i18n="returnToMoonwake">
+				RETURN TO MOONWAKE
+			</button>
 		</a>
 
 		<footer class="moonwake-footer">
 
 			<div class="moonwake-footer-main">
+
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button
+							type="button"
+							data-language="en"
+						>
+							🇺🇸 English
+						</button>
+
+						<button
+							type="button"
+							data-language="es"
+						>
+							🇪🇸 Español
+						</button>
+
+						<button
+							type="button"
+							data-language="ht"
+						>
+							🇭🇹 Kreyòl
+						</button>
+
+						<button
+							type="button"
+							data-language="zh"
+						>
+							🇨🇳 中文
+						</button>
+
+						<button
+							type="button"
+							data-language="pt"
+						>
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button
+						type="button"
+						class="language-button"
+					>
+						EN <span>›</span>
+					</button>
+
+				</div>
 
 				<div class="moonwake-footer-brand">
 
@@ -124,7 +246,7 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
 
 					<div class="footer-brand-text">
 
@@ -132,7 +254,10 @@
 							MOONWAKE ENTERTAINMENT
 						</p>
 
-						<p class="footer-tagline">
+						<p
+							class="footer-tagline"
+							data-i18n="tagline"
+						>
 							CREATING WORLDS BEYOND THE MAP
 						</p>
 
@@ -140,47 +265,110 @@
 
 				</div>
 
-
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<a href="about.html" data-i18n="about">
+							About
+						</a>
+
+						<a href="news.html" data-i18n="news">
+							News
+						</a>
+
+						<a href="archives.html" data-i18n="archives">
+							Archives
+						</a>
+
+						<a
+							href="youtube-project.html"
+							data-i18n="youtube"
+						>
+							YouTube
+						</a>
 
 					</div>
 
-
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<a
+							href="projects.html"
+							data-i18n="projects"
+						>
+							Projects
+						</a>
+
+						<a href="northreach-project.html">
+							Northreach
+						</a>
+
+						<a
+							href="library.html"
+							data-i18n="books"
+						>
+							Books
+						</a>
+
+						<a
+							href="music-project.html"
+							data-i18n="music"
+						>
+							Music
+						</a>
+
+						<a
+							href="smartpot-project.html"
+							data-i18n="smartPot"
+						>
+							Smart Pot
+						</a>
 
 					</div>
 
-
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<a
+							href="donate.html"
+							data-i18n="donate"
+						>
+							Donate
+						</a>
+
+						<a
+							href="store.html"
+							data-i18n="store"
+						>
+							Store
+						</a>
+
+						<a
+							href="feedback.html"
+							data-i18n="feedback"
+						>
+							Feedback
+						</a>
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+						>
 							Discord
 						</a>
 
@@ -198,14 +386,13 @@
 
 			</div>
 
-
 			<div class="moonwake-footer-bottom">
 
 				<p>
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -214,6 +401,6 @@
 		</footer>
 
 		<script src="script.js"></script>
-		
+
 	</body>
 </html>

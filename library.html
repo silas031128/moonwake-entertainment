@@ -5,695 +5,697 @@
 
 		<meta charset="UTF-8" />
 
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-				<title>Library | Moonwake Entertainment</title>
+		<title>Library | Moonwake Entertainment</title>
 
-				<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="style.css" />
 
-				<link rel="icon" type="image/png" href="Images/moonwake-favicon.png" />
+		<link rel="icon" type="image/png" href="Images/moonwake-favicon.png" />
 
-					<style>
+		<style>
 
-						/* Base */
+			/* Base */
 
-						* {
-						box-sizing: border-box;
-						}
+			* {
+			box-sizing: border-box;
+			}
 
-						body {
-						margin: 0;
+			body {
+			margin: 0;
 
-						background: #080d19;
+			background: #080d19;
 
-						color: #ffffff;
+			color: #ffffff;
 
-						font-family: Arial, Helvetica, sans-serif;
-						}
+			font-family: Arial, Helvetica, sans-serif;
+			}
 
-						a {
-						transition:
-						color 0.2s ease,
-						text-shadow 0.2s ease,
-						border-color 0.2s ease,
-						transform 0.2s ease;
-						}
+			a {
+			transition:
+			color 0.2s ease,
+			text-shadow 0.2s ease,
+			border-color 0.2s ease,
+			transform 0.2s ease;
+			}
 
 
-						/* Header */
+			/* Header */
 
-						.library-header {
-						width: 1100px;
-						max-width: 94%;
+			.library-header {
+			width: 1100px;
+			max-width: 94%;
 
-						margin: 55px auto 25px;
+			margin: 55px auto 25px;
 
-						padding: 32px;
+			padding: 32px;
 
-						background:
-						linear-gradient(
-						135deg,
-						rgba(139, 92, 246, 0.055),
-						transparent 55%
-						),
-						#11182c;
+			background:
+			linear-gradient(
+			135deg,
+			rgba(139, 92, 246, 0.055),
+			transparent 55%
+			),
+			#11182c;
 
-						border: 1px solid #39466b;
-						border-top: 3px solid #8b5cf6;
-						border-radius: 4px;
+			border: 1px solid #39466b;
+			border-top: 3px solid #8b5cf6;
+			border-radius: 4px;
 
-						box-shadow:
-						0 12px 28px rgba(0, 0, 0, 0.25),
-						0 0 20px rgba(139, 92, 246, 0.035);
+			box-shadow:
+			0 12px 28px rgba(0, 0, 0, 0.25),
+			0 0 20px rgba(139, 92, 246, 0.035);
 
-						position: relative;
-						}
+			position: relative;
+			}
 
-						.library-header::after {
-						content: "LIB-001";
+			.library-header::after {
+			content: "LIB-001";
 
-						position: absolute;
+			position: absolute;
 
-						top: 25px;
-						right: 28px;
+			top: 25px;
+			right: 28px;
 
-						color: #39466b;
+			color: #39466b;
 
-						font-size: 8px;
-						font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-code {
-						margin: 0;
+			.library-code {
+			margin: 0;
 
-						color: #687494;
+			color: #687494;
 
-						font-size: 9px;
-						font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-header h1 {
-						margin: 10px 0 7px;
+			.library-header h1 {
+			margin: 10px 0 7px;
 
-						color: #ffffff;
+			color: #ffffff;
 
-						font-size: 34px;
-						letter-spacing: 4px;
+			font-size: 34px;
+			letter-spacing: 4px;
 
-						text-shadow:
-						0 0 12px rgba(139, 92, 246, 0.18),
-						0 0 18px rgba(255, 225, 74, 0.07);
-						}
+			text-shadow:
+			0 0 12px rgba(139, 92, 246, 0.18),
+			0 0 18px rgba(255, 225, 74, 0.07);
+			}
 
-						.library-subtitle {
-						margin: 0;
+			.library-subtitle {
+			margin: 0;
 
-						color: #8b5cf6;
+			color: #8b5cf6;
 
-						font-size: 11px;
-						font-weight: bold;
+			font-size: 11px;
+			font-weight: bold;
 
-						letter-spacing: 3px;
-						}
+			letter-spacing: 3px;
+			}
 
-						.library-line {
-						width: 100%;
-						height: 1px;
+			.library-line {
+			width: 100%;
+			height: 1px;
 
-						margin: 22px 0;
+			margin: 22px 0;
 
-						background: #252f4c;
-						}
+			background: #252f4c;
+			}
 
 
-						/* Status */
+			/* Status */
 
-						.library-status-row {
-						display: flex;
+			.library-status-row {
+			display: flex;
 
-						flex-wrap: wrap;
+			flex-wrap: wrap;
 
-						gap: 35px;
-						}
+			gap: 35px;
+			}
 
-						.library-status {
-						display: flex;
+			.library-status {
+			display: flex;
 
-						gap: 10px;
+			gap: 10px;
 
-						align-items: center;
-						}
+			align-items: center;
+			}
 
-						.library-status span {
-						color: #687494;
+			.library-status span {
+			color: #687494;
 
-						font-size: 8px;
-						font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-						letter-spacing: 1.5px;
-						}
+			letter-spacing: 1.5px;
+			}
 
-						.library-status strong {
-						color: #ffe14a;
+			.library-status strong {
+			color: #ffe14a;
 
-						font-size: 9px;
+			font-size: 9px;
 
-						letter-spacing: 1px;
-						}
+			letter-spacing: 1px;
+			}
 
 
-						/* Main content */
+			/* Main content */
 
-						.library-page {
-						width: 1100px;
-						max-width: 94%;
+			.library-page {
+			width: 1100px;
+			max-width: 94%;
 
-						margin: 0 auto 70px;
-						}
+			margin: 0 auto 70px;
+			}
 
-						.library-section-heading {
-						margin: 35px 0 16px;
-						}
+			.library-section-heading {
+			margin: 35px 0 16px;
+			}
 
-						.library-section-heading p {
-						margin: 0 0 7px;
+			.library-section-heading p {
+			margin: 0 0 7px;
 
-						color: #687494;
+			color: #687494;
 
-						font-size: 8px;
-						font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-section-heading h2 {
-						margin: 0;
+			.library-section-heading h2 {
+			margin: 0;
 
-						color: #ffffff;
+			color: #ffffff;
 
-						font-size: 19px;
+			font-size: 19px;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
 
-						/* Book cards */
+			/* Book cards */
 
-						.library-books {
-						display: flex;
+			.library-books {
+			display: flex;
 
-						flex-direction: column;
+			flex-direction: column;
 
-						gap: 16px;
-						}
+			gap: 16px;
+			}
 
-						.library-book-card {
-						position: relative;
+			.library-book-card {
+			position: relative;
 
-						display: flex;
+			display: flex;
 
-						justify-content: space-between;
-						align-items: center;
+			justify-content: space-between;
+			align-items: center;
 
-						gap: 30px;
+			gap: 30px;
 
-						padding: 27px 30px;
+			padding: 27px 30px;
 
-						background:
-						linear-gradient(
-						120deg,
-						rgba(139, 92, 246, 0.025),
-						transparent 55%
-						),
-						#11182c;
+			background:
+			linear-gradient(
+			120deg,
+			rgba(139, 92, 246, 0.025),
+			transparent 55%
+			),
+			#11182c;
 
-						border: 1px solid #39466b;
-						border-left: 3px solid #8b5cf6;
-						border-radius: 4px;
+			border: 1px solid #39466b;
+			border-left: 3px solid #8b5cf6;
+			border-radius: 4px;
 
-						box-shadow:
-						0 8px 20px rgba(0, 0, 0, 0.20);
+			box-shadow:
+			0 8px 20px rgba(0, 0, 0, 0.20);
 
-						transition:
-						border-color 0.2s ease,
-						transform 0.2s ease,
-						box-shadow 0.2s ease;
-						}
+			transition:
+			border-color 0.2s ease,
+			transform 0.2s ease,
+			box-shadow 0.2s ease;
+			}
 
-						.library-book-card:hover {
-						transform: translateY(-2px);
+			.library-book-card:hover {
+			transform: translateY(-2px);
 
-						border-color: #8b5cf6;
+			border-color: #8b5cf6;
 
-						box-shadow:
-						0 12px 25px rgba(0, 0, 0, 0.25),
-						0 0 18px rgba(139, 92, 246, 0.05);
-						}
+			box-shadow:
+			0 12px 25px rgba(0, 0, 0, 0.25),
+			0 0 18px rgba(139, 92, 246, 0.05);
+			}
 
-						.library-book-info {
-						flex: 1;
-						}
+			.library-book-info {
+			flex: 1;
+			}
 
-						.library-book-code {
-						margin: 0 0 10px;
+			.library-book-code {
+			margin: 0 0 10px;
 
-						color: #687494;
+			color: #687494;
 
-						font-size: 9px;
-						font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-book-card h3 {
-						margin: 0 0 8px;
+			.library-book-card h3 {
+			margin: 0 0 8px;
 
-						color: #ffffff;
+			color: #ffffff;
 
-						font-size: 22px;
+			font-size: 22px;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-book-genre {
-						margin: 0 0 15px;
+			.library-book-genre {
+			margin: 0 0 15px;
 
-						color: #8b5cf6;
+			color: #8b5cf6;
 
-						font-size: 9px;
-						font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
-						.library-book-description {
-						max-width: 700px;
+			.library-book-description {
+			max-width: 700px;
 
-						margin: 0;
+			margin: 0;
 
-						color: #8c98bd;
+			color: #8c98bd;
 
-						font-size: 12px;
+			font-size: 12px;
 
-						line-height: 1.7;
-						}
+			line-height: 1.7;
+			}
 
 
-						/* Book meta */
+			/* Book meta */
 
-						.library-book-meta {
-						display: flex;
+			.library-book-meta {
+			display: flex;
 
-						align-items: center;
+			align-items: center;
 
-						gap: 10px;
+			gap: 10px;
 
-						margin-top: 18px;
+			margin-top: 18px;
 
-						padding-top: 14px;
+			padding-top: 14px;
 
-						border-top: 1px solid #252f4c;
-						}
+			border-top: 1px solid #252f4c;
+			}
 
-						.library-book-meta span {
-						color: #687494;
+			.library-book-meta span {
+			color: #687494;
 
-						font-size: 8px;
-						font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-						letter-spacing: 1.5px;
-						}
+			letter-spacing: 1.5px;
+			}
 
-						.library-book-meta strong {
-						color: #ffe14a;
+			.library-book-meta strong {
+			color: #ffe14a;
 
-						font-size: 9px;
+			font-size: 9px;
 
-						letter-spacing: 1px;
-						}
+			letter-spacing: 1px;
+			}
 
 
-						/* View book button */
+			/* View book button */
 
-						.library-book-action {
-						flex-shrink: 0;
-						}
+			.library-book-action {
+			flex-shrink: 0;
+			}
 
-						.library-book-action a {
-						display: inline-block;
+			.library-book-action a {
+			display: inline-block;
 
-						padding: 12px 18px;
+			padding: 12px 18px;
 
-						background: #18203a;
+			background: #18203a;
 
-						border: 1px solid #39466b;
-						border-radius: 3px;
+			border: 1px solid #39466b;
+			border-radius: 3px;
 
-						color: #ffe14a;
+			color: #ffe14a;
 
-						font-size: 9px;
-						font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-						letter-spacing: 1.5px;
+			letter-spacing: 1.5px;
 
-						text-decoration: none;
-						}
+			text-decoration: none;
+			}
 
-						.library-book-action a:hover {
-						color: #ffffff;
+			.library-book-action a:hover {
+			color: #ffffff;
 
-						border-color: #8b5cf6;
+			border-color: #8b5cf6;
 
-						box-shadow:
-						0 0 14px rgba(139, 92, 246, 0.15);
+			box-shadow:
+			0 0 14px rgba(139, 92, 246, 0.15);
 
-						transform: translateX(3px);
-						}
+			transform: translateX(3px);
+			}
 
 
-						/* Coming soon */
+			/* Coming soon */
 
-						.library-coming-soon {
-						border-left-color: #39466b;
+			.library-coming-soon {
+			border-left-color: #39466b;
 
-						opacity: 0.75;
-						}
+			opacity: 0.75;
+			}
 
-						.library-coming-soon:hover {
-						border-color: #39466b;
+			.library-coming-soon:hover {
+			border-color: #39466b;
 
-						transform: none;
+			transform: none;
 
-						box-shadow:
-						0 8px 20px rgba(0, 0, 0, 0.20);
-						}
+			box-shadow:
+			0 8px 20px rgba(0, 0, 0, 0.20);
+			}
 
-						.library-coming-soon .library-book-genre {
-						color: #687494;
-						}
+			.library-coming-soon .library-book-genre {
+			color: #687494;
+			}
 
-						.library-coming-soon .library-book-description {
-						color: #687494;
-						}
+			.library-coming-soon .library-book-description {
+			color: #687494;
+			}
 
-						.library-book-status {
-						flex-shrink: 0;
+			.library-book-status {
+			flex-shrink: 0;
 
-						color: #687494;
+			color: #687494;
 
-						font-size: 9px;
-						font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-						letter-spacing: 2px;
-						}
+			letter-spacing: 2px;
+			}
 
 
-						/* Universal footer */
+			/* Universal footer */
 
-						.moonwake-footer {
-						width: 100%;
+			.moonwake-footer {
+			width: 100%;
 
-						box-sizing: border-box;
+			box-sizing: border-box;
 
-						margin-top: 70px;
+			margin-top: 70px;
 
-						background:
-						linear-gradient(
-						135deg,
-						rgba(139, 92, 246, 0.035),
-						transparent 45%
-						),
-						#0b1120;
+			background:
+			linear-gradient(
+			135deg,
+			rgba(139, 92, 246, 0.035),
+			transparent 45%
+			),
+			#0b1120;
 
-						border-top: 1px solid #39466b;
+			border-top: 1px solid #39466b;
 
-						box-shadow:
-						0 -10px 30px rgba(0, 0, 0, 0.20);
+			box-shadow:
+			0 -10px 30px rgba(0, 0, 0, 0.20);
 
-						text-align: left;
-						}
+			text-align: left;
 
-						.moonwake-footer-main {
-						width: 1100px;
-						max-width: 94%;
+			position: relative;
+			}
 
-						margin: 0 auto;
+			.moonwake-footer-main {
+			width: 1100px;
+			max-width: 94%;
 
-						padding: 42px 0 38px;
+			margin: 0 auto;
 
-						display: flex;
+			padding: 42px 0 38px;
 
-						justify-content: space-between;
+			display: flex;
 
-						gap: 60px;
-						}
+			justify-content: space-between;
 
+			gap: 60px;
+			}
 
-						/* FOOTER BRAND */
 
-						.moonwake-footer-brand {
-						display: flex;
+			/* FOOTER BRAND */
 
-						align-items: center;
+			.moonwake-footer-brand {
+			display: flex;
 
-						min-width: 240px;
+			align-items: center;
 
-						gap: 18px;
-						}
+			min-width: 240px;
 
-						.footer-logo {
-						width: 62px;
-						height: 62px;
+			gap: 18px;
+			}
 
-						object-fit: contain;
+			.footer-logo {
+			width: 62px;
+			height: 62px;
 
-						filter:
-						drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
-						drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
-						}
+			object-fit: contain;
 
-						.footer-brand-text {
-						min-width: 0;
-						}
+			filter:
+			drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
+			drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
+			}
 
-						.footer-name {
-						margin: 0 0 7px;
+			.footer-brand-text {
+			min-width: 0;
+			}
 
-						color: #ffffff;
+			.footer-name {
+			margin: 0 0 7px;
 
-						font-size: 12px;
-						font-weight: bold;
+			color: #ffffff;
 
-						letter-spacing: 2px;
-						}
+			font-size: 12px;
+			font-weight: bold;
 
-						.footer-tagline {
-						margin: 0;
+			letter-spacing: 2px;
+			}
 
-						color: #687494;
+			.footer-tagline {
+			margin: 0;
 
-						font-size: 8px;
-						font-weight: bold;
+			color: #687494;
 
-						letter-spacing: 1.5px;
-						}
+			font-size: 8px;
+			font-weight: bold;
 
+			letter-spacing: 1.5px;
+			}
 
-						/* FOOTER NAV */
 
-						.moonwake-footer-nav {
-						display: grid;
+			/* FOOTER NAV */
 
-						grid-template-columns:
-						repeat(3, minmax(110px, 1fr));
+			.moonwake-footer-nav {
+			display: grid;
 
-						gap: 55px;
+			grid-template-columns:
+			repeat(3, minmax(110px, 1fr));
 
-						flex: 1;
+			gap: 55px;
 
-						max-width: 620px;
-						}
+			flex: 1;
 
-						.footer-column {
-						display: flex;
+			max-width: 620px;
+			}
 
-						flex-direction: column;
+			.footer-column {
+			display: flex;
 
-						gap: 9px;
-						}
+			flex-direction: column;
 
-						.footer-column h3 {
-						margin: 0 0 7px;
+			gap: 9px;
+			}
 
-						color: #8b5cf6;
+			.footer-column h3 {
+			margin: 0 0 7px;
 
-						font-size: 9px;
-						font-weight: bold;
+			color: #8b5cf6;
 
-						letter-spacing: 2px;
-						}
+			font-size: 9px;
+			font-weight: bold;
 
-						.footer-column a {
-						width: fit-content;
+			letter-spacing: 2px;
+			}
 
-						color: #687494;
+			.footer-column a {
+			width: fit-content;
 
-						font-size: 10px;
-						font-weight: bold;
+			color: #687494;
 
-						letter-spacing: 0.8px;
+			font-size: 10px;
+			font-weight: bold;
 
-						text-decoration: none;
-						}
+			letter-spacing: 0.8px;
 
-						.footer-column a:hover {
-						color: #ffe14a;
+			text-decoration: none;
+			}
 
-						text-shadow:
-						0 0 8px rgba(255, 225, 74, 0.18);
+			.footer-column a:hover {
+			color: #ffe14a;
 
-						transform: translateX(3px);
-						}
+			text-shadow:
+			0 0 8px rgba(255, 225, 74, 0.18);
 
+			transform: translateX(3px);
+			}
 
-						/* FOOTER BOTTOM */
 
-						.moonwake-footer-bottom {
-						width: 1100px;
-						max-width: 94%;
+			/* FOOTER BOTTOM */
 
-						margin: 0 auto;
+			.moonwake-footer-bottom {
+			width: 1100px;
+			max-width: 94%;
 
-						padding: 17px 0;
+			margin: 0 auto;
 
-						display: flex;
+			padding: 17px 0;
 
-						justify-content: space-between;
+			display: flex;
 
-						align-items: center;
+			justify-content: space-between;
 
-						border-top: 1px solid #252f4c;
-						}
+			align-items: center;
 
-						.moonwake-footer-bottom p {
-						margin: 0;
+			border-top: 1px solid #252f4c;
+			}
 
-						color: #39466b;
+			.moonwake-footer-bottom p {
+			margin: 0;
 
-						font-size: 8px;
-						font-weight: bold;
+			color: #39466b;
 
-						letter-spacing: 1.5px;
-						}
+			font-size: 8px;
+			font-weight: bold;
 
+			letter-spacing: 1.5px;
+			}
 
-						/* Mobile */
 
-						@media (max-width: 750px) {
+			/* Mobile */
 
-						.library-header {
-						padding: 25px;
-						}
+			@media (max-width: 750px) {
 
-						.library-header::after {
-						display: none;
-						}
+			.library-header {
+			padding: 25px;
+			}
 
-						.library-header h1 {
-						font-size: 27px;
+			.library-header::after {
+			display: none;
+			}
 
-						letter-spacing: 3px;
-						}
+			.library-header h1 {
+			font-size: 27px;
 
-						.library-status-row {
-						flex-direction: column;
+			letter-spacing: 3px;
+			}
 
-						gap: 12px;
-						}
+			.library-status-row {
+			flex-direction: column;
 
-						.library-book-card {
-						align-items: stretch;
+			gap: 12px;
+			}
 
-						flex-direction: column;
+			.library-book-card {
+			align-items: stretch;
 
-						padding: 23px;
-						}
+			flex-direction: column;
 
-						.library-book-card h3 {
-						font-size: 18px;
-						}
+			padding: 23px;
+			}
 
-						.library-book-action a {
-						width: 100%;
+			.library-book-card h3 {
+			font-size: 18px;
+			}
 
-						text-align: center;
-						}
+			.library-book-action a {
+			width: 100%;
 
-						.library-book-status {
-						padding-top: 5px;
-						}
+			text-align: center;
+			}
 
-						.moonwake-footer-main {
-						flex-direction: column;
+			.library-book-status {
+			padding-top: 5px;
+			}
 
-						gap: 35px;
+			.moonwake-footer-main {
+			flex-direction: column;
 
-						padding: 35px 0;
-						}
+			gap: 35px;
 
-						.moonwake-footer-brand {
-						min-width: 0;
-						}
+			padding: 35px 0;
+			}
 
-						.moonwake-footer-nav {
-						width: 100%;
+			.moonwake-footer-brand {
+			min-width: 0;
+			}
 
-						grid-template-columns:
-						repeat(2, minmax(0, 1fr));
+			.moonwake-footer-nav {
+			width: 100%;
 
-						gap: 30px;
-						}
+			grid-template-columns:
+			repeat(2, minmax(0, 1fr));
 
-						.moonwake-footer-bottom {
-						align-items: flex-start;
+			gap: 30px;
+			}
 
-						flex-direction: column;
+			.moonwake-footer-bottom {
+			align-items: flex-start;
 
-						gap: 7px;
+			flex-direction: column;
 
-						padding: 17px 0;
-						}
-						}
+			gap: 7px;
 
+			padding: 17px 0;
+			}
+			}
 
-						@media (max-width: 450px) {
 
-						.library-page,
-						.library-header {
-						max-width: 92%;
-						}
+			@media (max-width: 450px) {
 
-						.moonwake-footer-nav {
-						grid-template-columns: 1fr;
-						}
+			.library-page,
+			.library-header {
+			max-width: 92%;
+			}
 
-						.footer-logo {
-						width: 52px;
-						height: 52px;
-						}
+			.moonwake-footer-nav {
+			grid-template-columns: 1fr;
+			}
 
-						.footer-name {
-						font-size: 10px;
-						}
-						}
+			.footer-logo {
+			width: 52px;
+			height: 52px;
+			}
 
-					</style>
+			.footer-name {
+			font-size: 10px;
+			}
+			}
 
-				</head>
+		</style>
+
+	</head>
 
 
 	<body>
@@ -705,15 +707,15 @@
 
 			<section class="library-header">
 
-				<p class="library-code">
+				<p class="library-code" data-i18n="library">
 					LIBRARY
 				</p>
 
-				<h1>
+				<h1 data-i18n="moonwakeLibrary">
 					MOONWAKE LIBRARY
 				</h1>
 
-				<p class="library-subtitle">
+				<p class="library-subtitle" data-i18n="writingPublications">
 					WRITING &amp; PUBLICATIONS
 				</p>
 
@@ -723,11 +725,11 @@
 
 					<div class="library-status">
 
-						<span>
+						<span data-i18n="libraryStatusLabel">
 							LIBRARY STATUS
 						</span>
 
-						<strong>
+						<strong data-i18n="active">
 							ACTIVE
 						</strong>
 
@@ -736,7 +738,7 @@
 
 					<div class="library-status">
 
-						<span>
+						<span data-i18n="booksInLibrary">
 							BOOKS IN LIBRARY
 						</span>
 
@@ -751,17 +753,17 @@
 			</section>
 
 
-			<!--  Book catalog -->
+			<!-- Book catalog -->
 
 			<section>
 
 				<div class="library-section-heading">
 
-					<p>
+					<p data-i18n="catalog">
 						CATALOG
 					</p>
 
-					<h2>
+					<h2 data-i18n="availableWorks">
 						AVAILABLE WORKS
 					</h2>
 
@@ -779,9 +781,9 @@
 							<img
 								src="Images/places-cover.png"
 								alt="The Places That Shouldn't Exist book cover"
-        />
+							/>
 
-							</div>
+						</div>
 
 
 						<div class="library-book-info">
@@ -790,15 +792,15 @@
 								BOOK-001
 							</p>
 
-							<h3>
+							<h3 data-i18n="placesThatShouldntExist">
 								THE PLACES THAT SHOULDN'T EXIST
 							</h3>
 
-							<p class="library-book-genre">
+							<p class="library-book-genre" data-i18n="psychologicalHorror">
 								PSYCHOLOGICAL HORROR
 							</p>
 
-							<p class="library-book-description">
+							<p class="library-book-description" data-i18n="bookDescription">
 								A psychological horror novel following Silas
 								through a town that doesn't seem to follow
 								the rules of reality.
@@ -806,11 +808,11 @@
 
 							<div class="library-book-meta">
 
-								<span>
+								<span data-i18n="status">
 									STATUS
 								</span>
 
-								<strong>
+								<strong data-i18n="completed">
 									COMPLETED
 								</strong>
 
@@ -821,7 +823,10 @@
 
 						<div class="library-book-action">
 
-							<a href="places-library.html">
+							<a
+								href="places-library.html"
+								data-i18n="viewBook"
+							>
 								VIEW BOOK →
 							</a>
 
@@ -840,22 +845,25 @@
 								BOOK-002
 							</p>
 
-							<h3>
+							<h3 data-i18n="futurePublication">
 								FUTURE PUBLICATION
 							</h3>
 
-							<p class="library-book-genre">
+							<p class="library-book-genre" data-i18n="classified">
 								CLASSIFIED
 							</p>
 
-							<p class="library-book-description">
+							<p class="library-book-description" data-i18n="futureWritingProject">
 								A future Moonwake writing project.
 							</p>
 
 						</div>
 
 
-						<div class="library-book-status">
+						<div
+							class="library-book-status"
+							data-i18n="comingSoon"
+						>
 							COMING SOON
 						</div>
 
@@ -868,15 +876,53 @@
 
 		</main>
 
-		<a href="index.html" class="library-return-button">
+
+		<a
+			href="index.html"
+			class="library-return-button"
+			data-i18n="return"
+		>
 			RETURN
 		</a>
 
-		<!-- Universal footer-->
+
+		<!-- Universal footer -->
 
 		<footer class="moonwake-footer">
 
 			<div class="moonwake-footer-main">
+
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button type="button" data-language="en">
+							🇺🇸 English
+						</button>
+
+						<button type="button" data-language="es">
+							🇪🇸 Español
+						</button>
+
+						<button type="button" data-language="ht">
+							🇭🇹 Kreyòl
+						</button>
+
+						<button type="button" data-language="zh">
+							🇨🇳 中文
+						</button>
+
+						<button type="button" data-language="pt">
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button type="button" class="language-button">
+						EN <span>›</span>
+					</button>
+
+				</div>
 
 
 				<div class="moonwake-footer-brand">
@@ -885,48 +931,47 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-                />
+				/>
 
-						<div class="footer-brand-text">
+					<div class="footer-brand-text">
 
-							<p class="footer-name">
-								MOONWAKE ENTERTAINMENT
-							</p>
+						<p class="footer-name">
+							MOONWAKE ENTERTAINMENT
+						</p>
 
-							<p class="footer-tagline">
-								CREATING WORLDS BEYOND THE MAP
-							</p>
-
-						</div>
+						<p class="footer-tagline" data-i18n="tagline">
+							CREATING WORLDS BEYOND THE MAP
+						</p>
 
 					</div>
+
+				</div>
 
 
 				<nav
 					class="moonwake-footer-nav"
 					aria-label="Footer navigation"
-            >
-
+			>
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="explore">
 							EXPLORE
 						</h3>
 
-						<a href="about.html">
+						<a href="about.html" data-i18n="about">
 							About
 						</a>
 
-						<a href="news.html">
+						<a href="news.html" data-i18n="news">
 							News
 						</a>
 
-						<a href="archives.html">
+						<a href="archives.html" data-i18n="archives">
 							Archives
 						</a>
 
-						<a href="youtube-project.html">
+						<a href="youtube-project.html" data-i18n="youtube">
 							YouTube
 						</a>
 
@@ -935,11 +980,11 @@
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="projects">
 							PROJECTS
 						</h3>
 
-						<a href="projects.html">
+						<a href="projects.html" data-i18n="projects">
 							Projects
 						</a>
 
@@ -947,15 +992,15 @@
 							Northreach
 						</a>
 
-						<a href="library.html">
+						<a href="library.html" data-i18n="books">
 							Books
 						</a>
 
-						<a href="music-project.html">
+						<a href="music-project.html" data-i18n="music">
 							Music
 						</a>
 
-						<a href="smartpot-project.html">
+						<a href="smartpot-project.html" data-i18n="smartPot">
 							Smart Pot
 						</a>
 
@@ -964,19 +1009,19 @@
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="support">
 							SUPPORT
 						</h3>
 
-						<a href="donate.html">
+						<a href="donate.html" data-i18n="donate">
 							Donate
 						</a>
 
-						<a href="store.html">
+						<a href="store.html" data-i18n="store">
 							Store
 						</a>
 
-						<a href="feedback.html">
+						<a href="feedback.html" data-i18n="feedback">
 							Feedback
 						</a>
 
@@ -984,7 +1029,7 @@
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-                    >
+					>
 							Discord
 						</a>
 
@@ -992,12 +1037,11 @@
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
-						>
+					>
 							YouTube
 						</a>
 
 					</div>
-
 
 				</nav>
 
@@ -1010,7 +1054,7 @@
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -1018,6 +1062,8 @@
 
 		</footer>
 
+
+		<script src="script.js"></script>
 
 	</body>
 

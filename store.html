@@ -10,22 +10,29 @@
 	<body>
 
 		<header class="home-header">
-			<h1>STORE</h1>
-			<h2>MOONWAKE GOODS &amp; RELEASES</h2>
+			<h1 data-i18n="storeTitle">STORE</h1>
+			<h2 data-i18n="storeSubtitle">MOONWAKE GOODS &amp; RELEASES</h2>
 		</header>
 
 		<main class="store-page">
 
 			<div class="store-status-panel">
+
 				<p>
-					STORE STATUS: <span>PREPARING</span>
+					<span data-i18n="storeStatusLabel">STORE STATUS:</span>
+					<span data-i18n="preparing">PREPARING</span>
 				</p>
+
 				<p>
-					PRODUCTS AVAILABLE: <span>01</span>
+					<span data-i18n="productsAvailable">PRODUCTS AVAILABLE:</span>
+					<span>01</span>
 				</p>
+
 				<p>
-					LAST UPDATED: <span>SEPTEMBER 2026</span>
+					<span data-i18n="lastUpdated">LAST UPDATED:</span>
+					<span data-i18n="september2026">SEPTEMBER 2026</span>
 				</p>
+
 			</div>
 
 
@@ -33,9 +40,9 @@
 
 				<div class="store-code">MW-STORE-001</div>
 
-				<h2>MOONWAKE STORE</h2>
+				<h2 data-i18n="moonwakeStore">MOONWAKE STORE</h2>
 
-				<p>
+				<p data-i18n="storeIntroDescription">
 					Future Moonwake releases, digital goods, physical
 					products, and other creations will be available here.
 				</p>
@@ -52,27 +59,40 @@
 
 					<div class="store-card-code">PRODUCT-001</div>
 
-					<h3>NORTHREACH</h3>
+					<h3 data-i18n="northreach">NORTHREACH</h3>
 
-					<span class="store-status store-status-available">
+					<span
+						class="store-status store-status-available"
+						data-i18n="availableSoon"
+					>
 						AVAILABLE SOON
 					</span>
 
-					<p class="store-type">
+					<p
+						class="store-type"
+						data-i18n="storeTypeGame"
+					>
 						TYPE: GAME
 					</p>
 
-					<p>
+					<p data-i18n="storeNorthreachDescription">
 						THE ATLAS OF PATHS. A 3D exploration and survival
 						game built around Moonwake Entertainment's concept
 						of Reality Expansion.
 					</p>
 
-					<div class="store-price">
+					<div
+						class="store-price"
+						data-i18n="storeNorthreachPrice"
+					>
 						$9.99 USD
 					</div>
 
-					<a href="northreach-store.html" class="store-button">
+					<a
+						href="northreach-store.html"
+						class="store-button"
+						data-i18n="viewProduct"
+					>
 						VIEW PRODUCT →
 					</a>
 
@@ -85,17 +105,23 @@
 
 					<div class="store-card-code">PRODUCT-002</div>
 
-					<h3>MOONWAKE MUSIC</h3>
+					<h3 data-i18n="moonwakeMusic">MOONWAKE MUSIC</h3>
 
-					<span class="store-status">
+					<span
+						class="store-status"
+						data-i18n="comingSoon"
+					>
 						COMING SOON
 					</span>
 
-					<p class="store-type">
+					<p
+						class="store-type"
+						data-i18n="storeTypeMusic"
+					>
 						TYPE: MUSIC
 					</p>
 
-					<p>
+					<p data-i18n="storeMusicDescription">
 						Original music created for Moonwake projects
 						and future releases.
 					</p>
@@ -109,17 +135,23 @@
 
 					<div class="store-card-code">PRODUCT-003</div>
 
-					<h3>MOONWAKE MERCH</h3>
+					<h3 data-i18n="moonwakeMerch">MOONWAKE MERCH</h3>
 
-					<span class="store-status">
+					<span
+						class="store-status"
+						data-i18n="comingSoon"
+					>
 						COMING SOON
 					</span>
 
-					<p class="store-type">
+					<p
+						class="store-type"
+						data-i18n="storeTypePhysical"
+					>
 						TYPE: PHYSICAL
 					</p>
 
-					<p>
+					<p data-i18n="storeMerchDescription">
 						Future Moonwake merchandise and physical
 						products.
 					</p>
@@ -133,17 +165,23 @@
 
 					<div class="store-card-code">PRODUCT-004</div>
 
-					<h3>FUTURE RELEASE</h3>
+					<h3 data-i18n="futureRelease">FUTURE RELEASE</h3>
 
-					<span class="store-status">
+					<span
+						class="store-status"
+						data-i18n="unannounced"
+					>
 						UNANNOUNCED
 					</span>
 
-					<p class="store-type">
+					<p
+						class="store-type"
+						data-i18n="storeTypeUnknown"
+					>
 						TYPE: UNKNOWN
 					</p>
 
-					<p>
+					<p data-i18n="futureReleaseDescription">
 						This space is reserved for a future
 						Moonwake creation.
 					</p>
@@ -157,10 +195,46 @@
 
 
 		<a href="index.html">
-			<button>RETURN</button>
+			<button data-i18n="return">
+				RETURN
+			</button>
 		</a>
 
+
 		<footer class="moonwake-footer">
+
+			<div class="footer-language">
+
+				<div class="language-menu">
+
+					<button type="button" data-language="en">
+						🇺🇸 English
+					</button>
+
+					<button type="button" data-language="es">
+						🇪🇸 Español
+					</button>
+
+					<button type="button" data-language="ht">
+						🇭🇹 Kreyòl
+					</button>
+
+					<button type="button" data-language="zh">
+						🇨🇳 中文
+					</button>
+
+					<button type="button" data-language="pt">
+						🇧🇷 Português
+					</button>
+
+				</div>
+
+				<button type="button" class="language-button">
+					EN <span>›</span>
+				</button>
+
+			</div>
+
 
 			<div class="moonwake-footer-main">
 
@@ -170,7 +244,7 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
 
 					<div class="footer-brand-text">
 
@@ -187,46 +261,77 @@
 				</div>
 
 
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
+						<h3 data-i18n="explore">EXPLORE</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<a href="about.html" data-i18n="about">About</a>
+						<a href="news.html" data-i18n="news">News</a>
+						<a href="archives.html" data-i18n="archives">Archives</a>
+						<a href="youtube-project.html" data-i18n="youtube">
+							YouTube
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
+						<h3 data-i18n="projects">PROJECTS</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<a href="projects.html" data-i18n="projects">
+							Projects
+						</a>
+
+						<a
+							href="northreach-project.html"
+							data-i18n="northreach"
+						>
+							Northreach
+						</a>
+
+						<a href="library.html" data-i18n="books">
+							Books
+						</a>
+
+						<a href="music-project.html" data-i18n="music">
+							Music
+						</a>
+
+						<a href="smartpot-project.html" data-i18n="smartPot">
+							Smart Pot
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
+						<h3 data-i18n="support">SUPPORT</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<a href="donate.html" data-i18n="donate">
+							Donate
+						</a>
+
+						<a href="store.html" data-i18n="store">
+							Store
+						</a>
+
+						<a href="feedback.html" data-i18n="feedback">
+							Feedback
+						</a>
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+							data-i18n="discord"
+						>
 							Discord
 						</a>
 
@@ -234,6 +339,7 @@
 							href="https://www.youtube.com/@MoonwakeEntertainment"
 							target="_blank"
 							rel="noopener noreferrer"
+							data-i18n="youtube"
 						>
 							YouTube
 						</a>
@@ -247,11 +353,11 @@
 
 			<div class="moonwake-footer-bottom">
 
-				<p>
+				<p data-i18n="copyright">
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -259,5 +365,9 @@
 
 		</footer>
 
+
+		<script src="script.js"></script>
+
 	</body>
+
 </html>

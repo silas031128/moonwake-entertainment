@@ -1,17 +1,43 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
+
+		<meta charset="UTF-8" />
+
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+
 		<title>NEWS-001 • The Moonwake Website Begins</title>
-		<link rel="icon" href="Images/moonwake-favicon.png" type="image/png" />
-		<link rel="stylesheet" href="style.css" />
+
+		<link
+			rel="icon"
+			href="Images/moonwake-favicon.png"
+			type="image/png"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="style.css"
+		/>
+
 	</head>
 
 	<body>
 
 		<header class="home-header">
-			<h1>NEWS</h1>
-			<h2>MOONWAKE DEVELOPMENT LOG</h2>
+
+			<h1 data-i18n="news">
+				NEWS
+			</h1>
+
+			<h2 data-i18n="moonwakeDevelopmentLog">
+				MOONWAKE DEVELOPMENT LOG
+			</h2>
+
 		</header>
+
 
 		<main class="news-page">
 
@@ -21,45 +47,57 @@
 					NEWS-001
 				</div>
 
-				<h1>THE MOONWAKE WEBSITE BEGINS</h1>
+				<h1 data-i18n="websiteBegins">
+					THE MOONWAKE WEBSITE BEGINS
+				</h1>
 
-				<time datetime="2026-09">
+				<time
+					datetime="2026-09"
+					data-i18n="september2026"
+				>
 					SEPTEMBER 2026
 				</time>
 
-				<span class="news-tag">
+				<span
+					class="news-tag"
+					data-i18n="development"
+				>
 					DEVELOPMENT
 				</span>
 
 				<div class="article-divider"></div>
 
-				<p>
+
+				<p data-i18n="news001Paragraph1">
 					The official Moonwake Entertainment website is now
 					in development.
 				</p>
 
-				<p>
+				<p data-i18n="news001Paragraph2">
 					The website is being created as a central place for
 					Moonwake projects, stories, music, archives, and
 					future creations.
 				</p>
 
-				<p>
+				<p data-i18n="news001Paragraph3">
 					Several sections of the website are already being
 					developed, including the Moonwake Archives, Project
 					Catalog, News system, and Moonwake Library.
 				</p>
 
-				<p>
+				<p data-i18n="news001Paragraph4">
 					The website will continue to expand as new projects
 					and ideas are created.
 				</p>
 
+
 				<div class="article-note">
 
-					<span>DEVELOPMENT NOTE</span>
+					<span data-i18n="developmentNote">
+						DEVELOPMENT NOTE
+					</span>
 
-					<p>
+					<p data-i18n="news001Note">
 						This is the beginning of the Moonwake website.
 						More information will be added as development
 						continues.
@@ -71,13 +109,72 @@
 
 		</main>
 
+
 		<a href="news.html">
-			<button>RETURN TO NEWS</button>
+
+			<button data-i18n="returnToNews">
+				RETURN TO NEWS
+			</button>
+
 		</a>
+
 
 		<footer class="moonwake-footer">
 
 			<div class="moonwake-footer-main">
+
+
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button
+							type="button"
+							data-language="en"
+						>
+							🇺🇸 English
+						</button>
+
+						<button
+							type="button"
+							data-language="es"
+						>
+							🇪🇸 Español
+						</button>
+
+						<button
+							type="button"
+							data-language="ht"
+						>
+							🇭🇹 Kreyòl
+						</button>
+
+						<button
+							type="button"
+							data-language="zh"
+						>
+							🇨🇳 中文
+						</button>
+
+						<button
+							type="button"
+							data-language="pt"
+						>
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+
+					<button
+						type="button"
+						class="language-button"
+					>
+						EN <span>›</span>
+					</button>
+
+				</div>
+
 
 				<div class="moonwake-footer-brand">
 
@@ -85,7 +182,7 @@
 						src="Images/moonwake-favicon.png"
 						alt="Moonwake Entertainment"
 						class="footer-logo"
-			/>
+					/>
 
 					<div class="footer-brand-text">
 
@@ -93,7 +190,10 @@
 							MOONWAKE ENTERTAINMENT
 						</p>
 
-						<p class="footer-tagline">
+						<p
+							class="footer-tagline"
+							data-i18n="tagline"
+						>
 							CREATING WORLDS BEYOND THE MAP
 						</p>
 
@@ -102,46 +202,125 @@
 				</div>
 
 
-				<nav class="moonwake-footer-nav" aria-label="Footer navigation">
+				<nav
+					class="moonwake-footer-nav"
+					aria-label="Footer navigation"
+				>
+
 
 					<div class="footer-column">
 
-						<h3>EXPLORE</h3>
+						<h3 data-i18n="explore">
+							EXPLORE
+						</h3>
 
-						<a href="about.html">About</a>
-						<a href="news.html">News</a>
-						<a href="archives.html">Archives</a>
-						<a href="youtube-project.html">YouTube</a>
+						<a
+							href="about.html"
+							data-i18n="about"
+						>
+							About
+						</a>
+
+						<a
+							href="news.html"
+							data-i18n="news"
+						>
+							News
+						</a>
+
+						<a
+							href="archives.html"
+							data-i18n="archives"
+						>
+							Archives
+						</a>
+
+						<a
+							href="youtube-project.html"
+							data-i18n="youtube"
+						>
+							YouTube
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>PROJECTS</h3>
+						<h3 data-i18n="projects">
+							PROJECTS
+						</h3>
 
-						<a href="projects.html">Projects</a>
-						<a href="northreach-project.html">Northreach</a>
-						<a href="library.html">Books</a>
-						<a href="music-project.html">Music</a>
-						<a href="smartpot-project.html">Smart Pot</a>
+						<a
+							href="projects.html"
+							data-i18n="projects"
+						>
+							Projects
+						</a>
+
+						<a
+							href="northreach-project.html"
+							data-i18n="northreach"
+						>
+							Northreach
+						</a>
+
+						<a
+							href="library.html"
+							data-i18n="books"
+						>
+							Books
+						</a>
+
+						<a
+							href="music-project.html"
+							data-i18n="music"
+						>
+							Music
+						</a>
+
+						<a
+							href="smartpot-project.html"
+							data-i18n="smartPot"
+						>
+							Smart Pot
+						</a>
 
 					</div>
 
 
 					<div class="footer-column">
 
-						<h3>SUPPORT</h3>
+						<h3 data-i18n="support">
+							SUPPORT
+						</h3>
 
-						<a href="donate.html">Donate</a>
-						<a href="store.html">Store</a>
-						<a href="feedback.html">Feedback</a>
+						<a
+							href="donate.html"
+							data-i18n="donate"
+						>
+							Donate
+						</a>
+
+						<a
+							href="store.html"
+							data-i18n="store"
+						>
+							Store
+						</a>
+
+						<a
+							href="feedback.html"
+							data-i18n="feedback"
+						>
+							Feedback
+						</a>
 
 						<a
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-				>
+						>
 							Discord
 						</a>
 
@@ -166,7 +345,7 @@
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -174,6 +353,8 @@
 
 		</footer>
 
+
+		<script src="script.js"></script>
 
 	</body>
 </html>

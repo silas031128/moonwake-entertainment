@@ -5,1005 +5,1007 @@
 
 		<meta charset="UTF-8"/>
 
-			<meta
-				name="viewport"
-				content="width=device-width, initial-scale=1.0"
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
     />
 
-					<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="style.css"/>
 
-					<title>The Places That Shouldn't Exist | Moonwake Entertainment</title>
+		<title>The Places That Shouldn't Exist | Moonwake Entertainment</title>
 
-					<link
-						rel="icon"
-						type="image/png"
-						href="Images/moonwake-favicon.png"
+		<link
+			rel="icon"
+			type="image/png"
+			href="Images/moonwake-favicon.png"
     />
 
-						<style>
+		<style>
 
-							/* Base */
+			/* Base */
 
-							* {
-							box-sizing: border-box;
-							}
+			* {
+			box-sizing: border-box;
+			}
 
-							html {
-							margin: 0;
-							padding: 0;
-							}
+			html {
+			margin: 0;
+			padding: 0;
+			}
 
-							body {
-							margin: 0;
-							padding: 0;
+			body {
+			margin: 0;
+			padding: 0;
 
-							background: #080d19;
-							color: #ffffff;
+			background: #080d19;
+			color: #ffffff;
 
-							font-family: Arial, Helvetica, sans-serif;
-							}
+			font-family: Arial, Helvetica, sans-serif;
+			}
 
-							a,
-							button {
-							font-family: inherit;
-							}
+			a,
+			button {
+			font-family: inherit;
+			}
 
 
-							/* Page */
+			/* Page */
 
-							.book-page {
-							width: 1100px;
-							max-width: 94%;
+			.book-page {
+			width: 1100px;
+			max-width: 94%;
 
-							margin: 55px auto 70px;
-							}
+			margin: 55px auto 70px;
+			}
 
 
-							/* Book header */
+			/* Book header */
 
-							.book-header {
-							padding: 34px;
+			.book-header {
+			padding: 34px;
 
-							background:
-							linear-gradient(
-							135deg,
-							rgba(139, 92, 246, 0.055),
-							transparent 55%
-							),
-							#11182c;
+			background:
+			linear-gradient(
+			135deg,
+			rgba(139, 92, 246, 0.055),
+			transparent 55%
+			),
+			#11182c;
 
-							border: 1px solid #39466b;
-							border-top: 3px solid #8b5cf6;
-							border-radius: 4px;
+			border: 1px solid #39466b;
+			border-top: 3px solid #8b5cf6;
+			border-radius: 4px;
 
-							box-shadow:
-							0 12px 28px rgba(0, 0, 0, 0.25),
-							0 0 20px rgba(139, 92, 246, 0.035);
-							}
+			box-shadow:
+			0 12px 28px rgba(0, 0, 0, 0.25),
+			0 0 20px rgba(139, 92, 246, 0.035);
+			}
 
-							.book-code {
-							margin: 0 0 10px;
+			.book-code {
+			margin: 0 0 10px;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 9px;
-							font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-							letter-spacing: 2px;
-							}
+			letter-spacing: 2px;
+			}
 
-							.book-header h1 {
-							margin: 0 0 9px;
+			.book-header h1 {
+			margin: 0 0 9px;
 
-							color: #ffffff;
+			color: #ffffff;
 
-							font-size: 34px;
-							font-weight: bold;
+			font-size: 34px;
+			font-weight: bold;
 
-							line-height: 1.2;
+			line-height: 1.2;
 
-							letter-spacing: 4px;
+			letter-spacing: 4px;
 
-							overflow-wrap: break-word;
+			overflow-wrap: break-word;
 
-							text-shadow:
-							0 0 12px rgba(139, 92, 246, 0.18),
-							0 0 18px rgba(255, 225, 74, 0.07);
-							}
+			text-shadow:
+			0 0 12px rgba(139, 92, 246, 0.18),
+			0 0 18px rgba(255, 225, 74, 0.07);
+			}
 
-							.book-subtitle {
-							margin: 0;
+			.book-subtitle {
+			margin: 0;
 
-							color: #8b5cf6;
+			color: #8b5cf6;
 
-							font-size: 11px;
-							font-weight: bold;
+			font-size: 11px;
+			font-weight: bold;
 
-							letter-spacing: 3px;
-							}
+			letter-spacing: 3px;
+			}
 
-							.book-line {
-							width: 100%;
-							height: 1px;
+			.book-line {
+			width: 100%;
+			height: 1px;
 
-							margin: 23px 0;
+			margin: 23px 0;
 
-							background: #252f4c;
-							}
+			background: #252f4c;
+			}
 
 
-							/* Book status */
+			/* Book status */
 
-							.book-status-row {
-							display: flex;
+			.book-status-row {
+			display: flex;
 
-							flex-wrap: wrap;
+			flex-wrap: wrap;
 
-							gap: 35px;
-							}
+			gap: 35px;
+			}
 
-							.book-status {
-							display: flex;
+			.book-status {
+			display: flex;
 
-							align-items: center;
+			align-items: center;
 
-							gap: 10px;
+			gap: 10px;
 
-							min-width: 0;
-							}
+			min-width: 0;
+			}
 
-							.book-status span {
-							flex-shrink: 0;
+			.book-status span {
+			flex-shrink: 0;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 8px;
-							font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-							letter-spacing: 1.5px;
-							}
+			letter-spacing: 1.5px;
+			}
 
-							.book-status strong {
-							min-width: 0;
+			.book-status strong {
+			min-width: 0;
 
-							color: #ffe14a;
+			color: #ffe14a;
 
-							font-size: 9px;
+			font-size: 9px;
 
-							letter-spacing: 1px;
+			letter-spacing: 1px;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
 
-							/* Sections */
+			/* Sections */
 
-							.book-section {
-							margin-top: 22px;
+			.book-section {
+			margin-top: 22px;
 
-							padding: 28px 30px;
+			padding: 28px 30px;
 
-							background:
-							linear-gradient(
-							120deg,
-							rgba(139, 92, 246, 0.025),
-							transparent 55%
-							),
-							#11182c;
+			background:
+			linear-gradient(
+			120deg,
+			rgba(139, 92, 246, 0.025),
+			transparent 55%
+			),
+			#11182c;
 
-							border: 1px solid #39466b;
-							border-radius: 4px;
+			border: 1px solid #39466b;
+			border-radius: 4px;
 
-							box-shadow:
-							0 8px 20px rgba(0, 0, 0, 0.20);
-							}
+			box-shadow:
+			0 8px 20px rgba(0, 0, 0, 0.20);
+			}
 
-							.book-section-code {
-							margin: 0 0 9px;
+			.book-section-code {
+			margin: 0 0 9px;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 8px;
-							font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-							letter-spacing: 2px;
-							}
+			letter-spacing: 2px;
+			}
 
-							.book-section h2 {
-							margin: 0 0 16px;
+			.book-section h2 {
+			margin: 0 0 16px;
 
-							color: #ffffff;
+			color: #ffffff;
 
-							font-size: 19px;
+			font-size: 19px;
 
-							line-height: 1.3;
+			line-height: 1.3;
 
-							letter-spacing: 2px;
+			letter-spacing: 2px;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
-							.book-section p {
-							max-width: 850px;
+			.book-section p {
+			max-width: 850px;
 
-							margin: 0;
+			margin: 0;
 
-							color: #8c98bd;
+			color: #8c98bd;
 
-							font-size: 13px;
+			font-size: 13px;
 
-							line-height: 1.75;
+			line-height: 1.75;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
 
-							/* Book information */
+			/* Book information */
 
-							.book-info-list {
-							width: 100%;
+			.book-info-list {
+			width: 100%;
 
-							margin-top: 20px;
+			margin-top: 20px;
 
-							border-top: 1px solid #252f4c;
-							}
+			border-top: 1px solid #252f4c;
+			}
 
-							.book-info-row {
-							display: flex;
+			.book-info-row {
+			display: flex;
 
-							align-items: center;
-							justify-content: space-between;
+			align-items: center;
+			justify-content: space-between;
 
-							gap: 20px;
+			gap: 20px;
 
-							width: 100%;
+			width: 100%;
 
-							padding: 13px 0;
+			padding: 13px 0;
 
-							border-bottom: 1px solid #252f4c;
-							}
+			border-bottom: 1px solid #252f4c;
+			}
 
-							.book-info-row span {
-							flex-shrink: 0;
+			.book-info-row span {
+			flex-shrink: 0;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 9px;
-							font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-							letter-spacing: 1.5px;
-							}
+			letter-spacing: 1.5px;
+			}
 
-							.book-info-row strong {
-							min-width: 0;
+			.book-info-row strong {
+			min-width: 0;
 
-							color: #ffe14a;
+			color: #ffe14a;
 
-							font-size: 9px;
+			font-size: 9px;
 
-							letter-spacing: 1px;
+			letter-spacing: 1px;
 
-							text-align: right;
+			text-align: right;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
 
-							/* Sample section */
+			/* Sample section */
 
-							.book-sample-section {
-							border-left: 3px solid #8b5cf6;
-							}
+			.book-sample-section {
+			border-left: 3px solid #8b5cf6;
+			}
 
-							.book-sample-intro {
-							margin-bottom: 20px !important;
+			.book-sample-intro {
+			margin-bottom: 20px !important;
 
-							color: #687494 !important;
+			color: #687494 !important;
 
-							font-size: 10px !important;
+			font-size: 10px !important;
 
-							font-weight: bold;
+			font-weight: bold;
 
-							letter-spacing: 1.2px;
-							}
+			letter-spacing: 1.2px;
+			}
 
-							.read-chapter-button {
-							display: inline-block;
+			.read-chapter-button {
+			display: inline-block;
 
-							padding: 13px 20px;
+			padding: 13px 20px;
 
-							background: #18203a;
+			background: #18203a;
 
-							border: 1px solid #39466b;
-							border-radius: 3px;
+			border: 1px solid #39466b;
+			border-radius: 3px;
 
-							color: #ffe14a;
+			color: #ffe14a;
 
-							font-size: 9px;
-							font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-							letter-spacing: 1.7px;
+			letter-spacing: 1.7px;
 
-							cursor: pointer;
+			cursor: pointer;
 
-							transition:
-							color 0.2s ease,
-							border-color 0.2s ease,
-							box-shadow 0.2s ease,
-							transform 0.2s ease;
-							}
+			transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease,
+			transform 0.2s ease;
+			}
 
-							.read-chapter-button:hover {
-							color: #ffffff;
+			.read-chapter-button:hover {
+			color: #ffffff;
 
-							border-color: #8b5cf6;
+			border-color: #8b5cf6;
 
-							box-shadow:
-							0 0 15px rgba(139, 92, 246, 0.16);
+			box-shadow:
+			0 0 15px rgba(139, 92, 246, 0.16);
 
-							transform: translateX(3px);
-							}
+			transform: translateX(3px);
+			}
 
-							.read-chapter-button:active {
-							border-color: #ffe14a;
-							}
+			.read-chapter-button:active {
+			border-color: #ffe14a;
+			}
 
 
-							/* End and future release */
+			/* End and future release */
 
-							.book-full-release {
-							border-left: 3px solid #ffe14a;
+			.book-full-release {
+			border-left: 3px solid #ffe14a;
 
-							text-align: center;
-							}
+			text-align: center;
+			}
 
-							.book-full-release h2 {
-							margin-bottom: 10px;
-							}
+			.book-full-release h2 {
+			margin-bottom: 10px;
+			}
 
-							.book-full-release p {
-							margin: 0 auto;
+			.book-full-release p {
+			margin: 0 auto;
 
-							color: #687494;
-							}
+			color: #687494;
+			}
 
-							.release-status {
-							display: inline-block;
+			.release-status {
+			display: inline-block;
 
-							margin-top: 20px;
+			margin-top: 20px;
 
-							padding: 10px 17px;
+			padding: 10px 17px;
 
-							background: #18203a;
+			background: #18203a;
 
-							border: 1px solid #39466b;
-							border-radius: 3px;
+			border: 1px solid #39466b;
+			border-radius: 3px;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 9px;
-							font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-							letter-spacing: 1.5px;
-							}
+			letter-spacing: 1.5px;
+			}
 
 
-							/* Chapter modal */
+			/* Chapter modal */
 
-							#chapterDialog {
-							width: min(900px, 92vw);
-							max-height: 88vh;
+			#chapterDialog {
+			width: min(900px, 92vw);
+			max-height: 88vh;
 
-							padding: 0;
+			padding: 0;
 
-							background: #0d1426;
+			background: #0d1426;
 
-							color: #ffffff;
+			color: #ffffff;
 
-							border: 1px solid #39466b;
-							border-top: 3px solid #8b5cf6;
-							border-radius: 4px;
+			border: 1px solid #39466b;
+			border-top: 3px solid #8b5cf6;
+			border-radius: 4px;
 
-							box-shadow:
-							0 20px 60px rgba(0, 0, 0, 0.55),
-							0 0 30px rgba(139, 92, 246, 0.08);
-							}
+			box-shadow:
+			0 20px 60px rgba(0, 0, 0, 0.55),
+			0 0 30px rgba(139, 92, 246, 0.08);
+			}
 
-							#chapterDialog::backdrop {
-							background: rgba(4, 7, 15, 0.82);
+			#chapterDialog::backdrop {
+			background: rgba(4, 7, 15, 0.82);
 
-							backdrop-filter: blur(4px);
-							}
+			backdrop-filter: blur(4px);
+			}
 
 
-							/* Modal header */
+			/* Modal header */
 
-							.chapter-modal-header {
-							display: flex;
+			.chapter-modal-header {
+			display: flex;
 
-							align-items: flex-start;
-							justify-content: space-between;
+			align-items: flex-start;
+			justify-content: space-between;
 
-							gap: 25px;
+			gap: 25px;
 
-							padding: 22px 28px;
+			padding: 22px 28px;
 
-							background:
-							linear-gradient(
-							135deg,
-							rgba(139, 92, 246, 0.06),
-							transparent 60%
-							),
-							#11182c;
+			background:
+			linear-gradient(
+			135deg,
+			rgba(139, 92, 246, 0.06),
+			transparent 60%
+			),
+			#11182c;
 
-							border-bottom: 1px solid #252f4c;
-							}
+			border-bottom: 1px solid #252f4c;
+			}
 
-							.chapter-modal-title {
-							flex: 1 1 auto;
+			.chapter-modal-title {
+			flex: 1 1 auto;
 
-							min-width: 0;
-							}
+			min-width: 0;
+			}
 
-							.chapter-modal-code {
-							margin: 0 0 8px;
+			.chapter-modal-code {
+			margin: 0 0 8px;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 8px;
-							font-weight: bold;
+			font-size: 8px;
+			font-weight: bold;
 
-							letter-spacing: 2px;
-							}
+			letter-spacing: 2px;
+			}
 
-							.chapter-modal-header h2 {
-							margin: 0;
+			.chapter-modal-header h2 {
+			margin: 0;
 
-							color: #ffffff;
+			color: #ffffff;
 
-							font-size: 22px;
+			font-size: 22px;
 
-							line-height: 1.3;
+			line-height: 1.3;
 
-							letter-spacing: 2px;
+			letter-spacing: 2px;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
-							.chapter-close {
-							flex: 0 0 34px;
+			.chapter-close {
+			flex: 0 0 34px;
 
-							width: 34px;
-							height: 34px;
+			width: 34px;
+			height: 34px;
 
-							padding: 0;
+			padding: 0;
 
-							background: #18203a;
+			background: #18203a;
 
-							border: 1px solid #39466b;
-							border-radius: 3px;
+			border: 1px solid #39466b;
+			border-radius: 3px;
 
-							color: #687494;
+			color: #687494;
 
-							font-size: 20px;
+			font-size: 20px;
 
-							line-height: 1;
+			line-height: 1;
 
-							cursor: pointer;
+			cursor: pointer;
 
-							transition:
-							color 0.2s ease,
-							border-color 0.2s ease,
-							box-shadow 0.2s ease;
-							}
+			transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease;
+			}
 
-							.chapter-close:hover {
-							color: #ffe14a;
+			.chapter-close:hover {
+			color: #ffe14a;
 
-							border-color: #8b5cf6;
+			border-color: #8b5cf6;
 
-							box-shadow:
-							0 0 12px rgba(139, 92, 246, 0.14);
-							}
+			box-shadow:
+			0 0 12px rgba(139, 92, 246, 0.14);
+			}
 
 
-							/* Modal reading area */
+			/* Modal reading area */
 
-							.chapter-modal-body {
-							max-height: calc(88vh - 100px);
+			.chapter-modal-body {
+			max-height: calc(88vh - 100px);
 
-							overflow-y: auto;
-							overflow-x: hidden;
+			overflow-y: auto;
+			overflow-x: hidden;
 
-							padding: 30px 38px 45px;
+			padding: 30px 38px 45px;
 
-							scrollbar-color: #39466b #0d1426;
-							scrollbar-width: thin;
-							}
+			scrollbar-color: #39466b #0d1426;
+			scrollbar-width: thin;
+			}
 
-							.chapter-modal-body::-webkit-scrollbar {
-							width: 8px;
-							}
+			.chapter-modal-body::-webkit-scrollbar {
+			width: 8px;
+			}
 
-							.chapter-modal-body::-webkit-scrollbar-track {
-							background: #0d1426;
-							}
+			.chapter-modal-body::-webkit-scrollbar-track {
+			background: #0d1426;
+			}
 
-							.chapter-modal-body::-webkit-scrollbar-thumb {
-							background: #39466b;
+			.chapter-modal-body::-webkit-scrollbar-thumb {
+			background: #39466b;
 
-							border-radius: 4px;
-							}
+			border-radius: 4px;
+			}
 
-							.chapter-modal-body::-webkit-scrollbar-thumb:hover {
-							background: #8b5cf6;
-							}
+			.chapter-modal-body::-webkit-scrollbar-thumb:hover {
+			background: #8b5cf6;
+			}
 
 
-							/* Chapter text */
+			/* Chapter text */
 
-							.chapter-text {
-							width: 100%;
-							max-width: 760px;
+			.chapter-text {
+			width: 100%;
+			max-width: 760px;
 
-							margin: 0 auto;
+			margin: 0 auto;
 
-							min-width: 0;
-							}
+			min-width: 0;
+			}
 
-							.chapter-text p {
-							margin: 0 0 20px;
+			.chapter-text p {
+			margin: 0 0 20px;
 
-							color: #c0c8df;
+			color: #c0c8df;
 
-							font-family:
-							Georgia,
-							"Times New Roman",
-							serif;
+			font-family:
+			Georgia,
+			"Times New Roman",
+			serif;
 
-							font-size: 16px;
+			font-size: 16px;
 
-							line-height: 1.9;
+			line-height: 1.9;
 
-							overflow-wrap: break-word;
-							}
+			overflow-wrap: break-word;
+			}
 
-							.chapter-text p:last-child {
-							margin-bottom: 0;
-							}
+			.chapter-text p:last-child {
+			margin-bottom: 0;
+			}
 
-							.chapter-end {
-							margin-top: 35px !important;
+			.chapter-end {
+			margin-top: 35px !important;
 
-							padding-top: 20px;
+			padding-top: 20px;
 
-							border-top: 1px solid #252f4c;
+			border-top: 1px solid #252f4c;
 
-							color: #687494 !important;
+			color: #687494 !important;
 
-							font-family:
-							Arial,
-							Helvetica,
-							sans-serif !important;
+			font-family:
+			Arial,
+			Helvetica,
+			sans-serif !important;
 
-							font-size: 9px !important;
-							font-weight: bold;
+			font-size: 9px !important;
+			font-weight: bold;
 
-							letter-spacing: 1.5px;
+			letter-spacing: 1.5px;
 
-							text-align: center;
-							}
+			text-align: center;
+			}
 
 
-							/* Return button */
+			/* Return button */
 
-							.book-return {
-							width: 100%;
+			.book-return {
+			width: 100%;
 
-							margin: 30px 0;
+			margin: 30px 0;
 
-							text-align: center;
-							}
+			text-align: center;
+			}
 
-							.book-return a {
-							display: inline-block;
+			.book-return a {
+			display: inline-block;
 
-							padding: 12px 20px;
+			padding: 12px 20px;
 
-							background: #11182c;
+			background: #11182c;
 
-							border: 1px solid #39466b;
-							border-radius: 3px;
+			border: 1px solid #39466b;
+			border-radius: 3px;
 
-							color: #8c98bd;
+			color: #8c98bd;
 
-							font-size: 9px;
-							font-weight: bold;
+			font-size: 9px;
+			font-weight: bold;
 
-							letter-spacing: 1.5px;
+			letter-spacing: 1.5px;
 
-							text-decoration: none;
+			text-decoration: none;
 
-							transition:
-							color 0.2s ease,
-							border-color 0.2s ease,
-							box-shadow 0.2s ease,
-							transform 0.2s ease;
-							}
+			transition:
+			color 0.2s ease,
+			border-color 0.2s ease,
+			box-shadow 0.2s ease,
+			transform 0.2s ease;
+			}
 
-							.book-return a:hover {
-							color: #ffe14a;
+			.book-return a:hover {
+			color: #ffe14a;
 
-							border-color: #8b5cf6;
+			border-color: #8b5cf6;
 
-							box-shadow:
-							0 0 14px rgba(139, 92, 246, 0.12);
+			box-shadow:
+			0 0 14px rgba(139, 92, 246, 0.12);
 
-							transform: translateY(-2px);
-							}
+			transform: translateY(-2px);
+			}
 
 
-							/* Universal footer */
+			/* Universal footer */
 
-							.moonwake-footer {
-							width: 100%;
+			.moonwake-footer {
+			width: 100%;
 
-							margin-top: 70px;
+			margin-top: 70px;
 
-							background:
-							linear-gradient(
-							135deg,
-							rgba(139, 92, 246, 0.035),
-							transparent 45%
-							),
-							#0b1120;
+			background:
+			linear-gradient(
+			135deg,
+			rgba(139, 92, 246, 0.035),
+			transparent 45%
+			),
+			#0b1120;
 
-							border-top: 1px solid #39466b;
+			border-top: 1px solid #39466b;
 
-							box-shadow:
-							0 -10px 30px rgba(0, 0, 0, 0.20);
-							}
+			box-shadow:
+			0 -10px 30px rgba(0, 0, 0, 0.20);
 
-							.moonwake-footer-main {
-							width: 1100px;
-							max-width: 94%;
+			position: relative;
+			}
 
-							margin: 0 auto;
+			.moonwake-footer-main {
+			width: 1100px;
+			max-width: 94%;
 
-							padding: 42px 0 38px;
+			margin: 0 auto;
 
-							display: flex;
+			padding: 42px 0 38px;
 
-							justify-content: space-between;
+			display: flex;
 
-							gap: 60px;
-							}
+			justify-content: space-between;
 
-							.moonwake-footer-brand {
-							display: flex;
+			gap: 60px;
+			}
 
-							align-items: center;
+			.moonwake-footer-brand {
+			display: flex;
 
-							min-width: 240px;
+			align-items: center;
 
-							gap: 18px;
-							}
+			min-width: 240px;
 
-							.footer-logo {
-							flex-shrink: 0;
+			gap: 18px;
+			}
 
-							width: 62px;
-							height: 62px;
+			.footer-logo {
+			flex-shrink: 0;
 
-							object-fit: contain;
+			width: 62px;
+			height: 62px;
 
-							filter:
-							drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
-							drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
-							}
+			object-fit: contain;
 
-							.footer-brand-text {
-							min-width: 0;
-							}
+			filter:
+			drop-shadow(0 0 7px rgba(139, 92, 246, 0.22))
+			drop-shadow(0 0 12px rgba(255, 225, 74, 0.10));
+			}
 
-							.footer-name {
-							margin: 0 0 7px;
+			.footer-brand-text {
+			min-width: 0;
+			}
 
-							color: #ffffff;
+			.footer-name {
+			margin: 0 0 7px;
 
-							font-size: 12px;
-							font-weight: bold;
+			color: #ffffff;
 
-							letter-spacing: 2px;
+			font-size: 12px;
+			font-weight: bold;
 
-							overflow-wrap: break-word;
-							}
+			letter-spacing: 2px;
 
-							.footer-tagline {
-							margin: 0;
+			overflow-wrap: break-word;
+			}
 
-							color: #687494;
+			.footer-tagline {
+			margin: 0;
 
-							font-size: 8px;
-							font-weight: bold;
+			color: #687494;
 
-							letter-spacing: 1.5px;
+			font-size: 8px;
+			font-weight: bold;
 
-							overflow-wrap: break-word;
-							}
+			letter-spacing: 1.5px;
 
-							.moonwake-footer-nav {
-							display: grid;
+			overflow-wrap: break-word;
+			}
 
-							grid-template-columns:
-							repeat(3, minmax(110px, 1fr));
+			.moonwake-footer-nav {
+			display: grid;
 
-							gap: 55px;
+			grid-template-columns:
+			repeat(3, minmax(110px, 1fr));
 
-							flex: 1;
+			gap: 55px;
 
-							min-width: 0;
+			flex: 1;
 
-							max-width: 620px;
-							}
+			min-width: 0;
 
-							.footer-column {
-							display: flex;
+			max-width: 620px;
+			}
 
-							flex-direction: column;
+			.footer-column {
+			display: flex;
 
-							gap: 9px;
+			flex-direction: column;
 
-							min-width: 0;
-							}
+			gap: 9px;
 
-							.footer-column h3 {
-							margin: 0 0 7px;
+			min-width: 0;
+			}
 
-							color: #8b5cf6;
+			.footer-column h3 {
+			margin: 0 0 7px;
 
-							font-size: 9px;
-							font-weight: bold;
+			color: #8b5cf6;
 
-							letter-spacing: 2px;
-							}
+			font-size: 9px;
+			font-weight: bold;
 
-							.footer-column a {
-							width: fit-content;
+			letter-spacing: 2px;
+			}
 
-							color: #687494;
+			.footer-column a {
+			width: fit-content;
 
-							font-size: 10px;
-							font-weight: bold;
+			color: #687494;
 
-							letter-spacing: 0.8px;
+			font-size: 10px;
+			font-weight: bold;
 
-							text-decoration: none;
+			letter-spacing: 0.8px;
 
-							transition:
-							color 0.2s ease,
-							text-shadow 0.2s ease,
-							transform 0.2s ease;
-							}
+			text-decoration: none;
 
-							.footer-column a:hover {
-							color: #ffe14a;
+			transition:
+			color 0.2s ease,
+			text-shadow 0.2s ease,
+			transform 0.2s ease;
+			}
 
-							text-shadow:
-							0 0 8px rgba(255, 225, 74, 0.18);
+			.footer-column a:hover {
+			color: #ffe14a;
 
-							transform: translateX(3px);
-							}
+			text-shadow:
+			0 0 8px rgba(255, 225, 74, 0.18);
 
-							.moonwake-footer-bottom {
-							width: 1100px;
-							max-width: 94%;
+			transform: translateX(3px);
+			}
 
-							margin: 0 auto;
+			.moonwake-footer-bottom {
+			width: 1100px;
+			max-width: 94%;
 
-							padding: 17px 0;
+			margin: 0 auto;
 
-							display: flex;
+			padding: 17px 0;
 
-							align-items: center;
-							justify-content: space-between;
+			display: flex;
 
-							gap: 20px;
+			align-items: center;
+			justify-content: space-between;
 
-							border-top: 1px solid #252f4c;
-							}
+			gap: 20px;
 
-							.moonwake-footer-bottom p {
-							margin: 0;
+			border-top: 1px solid #252f4c;
+			}
 
-							color: #39466b;
+			.moonwake-footer-bottom p {
+			margin: 0;
 
-							font-size: 8px;
-							font-weight: bold;
+			color: #39466b;
 
-							letter-spacing: 1.5px;
+			font-size: 8px;
+			font-weight: bold;
 
-							overflow-wrap: break-word;
-							}
+			letter-spacing: 1.5px;
 
+			overflow-wrap: break-word;
+			}
 
-							/* Mobile */
 
-							@media (max-width: 750px) {
+			/* Mobile */
 
-							.book-page {
-							max-width: 92%;
+			@media (max-width: 750px) {
 
-							margin-top: 35px;
-							}
+			.book-page {
+			max-width: 92%;
 
-							.book-header {
-							padding: 25px;
-							}
+			margin-top: 35px;
+			}
 
-							.book-header h1 {
-							font-size: 27px;
+			.book-header {
+			padding: 25px;
+			}
 
-							letter-spacing: 3px;
-							}
+			.book-header h1 {
+			font-size: 27px;
 
-							.book-status-row {
-							align-items: flex-start;
+			letter-spacing: 3px;
+			}
 
-							flex-direction: column;
+			.book-status-row {
+			align-items: flex-start;
 
-							gap: 12px;
-							}
+			flex-direction: column;
 
-							.book-status {
-							width: 100%;
+			gap: 12px;
+			}
 
-							align-items: flex-start;
-							}
+			.book-status {
+			width: 100%;
 
-							.book-status strong {
-							overflow-wrap: anywhere;
-							}
+			align-items: flex-start;
+			}
 
-							.book-section {
-							padding: 23px;
-							}
+			.book-status strong {
+			overflow-wrap: anywhere;
+			}
 
-							.book-info-row {
-							align-items: flex-start;
+			.book-section {
+			padding: 23px;
+			}
 
-							flex-direction: column;
+			.book-info-row {
+			align-items: flex-start;
 
-							gap: 6px;
-							}
+			flex-direction: column;
 
-							.book-info-row strong {
-							text-align: left;
-							}
+			gap: 6px;
+			}
 
-							#chapterDialog {
-							width: 94vw;
+			.book-info-row strong {
+			text-align: left;
+			}
 
-							max-width: 94vw;
+			#chapterDialog {
+			width: 94vw;
 
-							max-height: 92vh;
-							}
+			max-width: 94vw;
 
-							.chapter-modal-header {
-							align-items: flex-start;
+			max-height: 92vh;
+			}
 
-							gap: 15px;
+			.chapter-modal-header {
+			align-items: flex-start;
 
-							padding: 20px 22px;
-							}
+			gap: 15px;
 
-							.chapter-modal-title {
-							min-width: 0;
-							}
+			padding: 20px 22px;
+			}
 
-							.chapter-modal-header h2 {
-							font-size: 18px;
-							}
+			.chapter-modal-title {
+			min-width: 0;
+			}
 
-							.chapter-close {
-							flex-basis: 34px;
-							}
+			.chapter-modal-header h2 {
+			font-size: 18px;
+			}
 
-							.chapter-modal-body {
-							max-height: calc(92vh - 100px);
+			.chapter-close {
+			flex-basis: 34px;
+			}
 
-							padding: 25px 22px 35px;
-							}
+			.chapter-modal-body {
+			max-height: calc(92vh - 100px);
 
-							.chapter-text p {
-							font-size: 15px;
+			padding: 25px 22px 35px;
+			}
 
-							line-height: 1.8;
-							}
+			.chapter-text p {
+			font-size: 15px;
 
-							.moonwake-footer-main {
-							flex-direction: column;
+			line-height: 1.8;
+			}
 
-							gap: 35px;
+			.moonwake-footer-main {
+			flex-direction: column;
 
-							padding: 35px 0;
-							}
+			gap: 35px;
 
-							.moonwake-footer-brand {
-							min-width: 0;
-							}
+			padding: 35px 0;
+			}
 
-							.moonwake-footer-nav {
-							width: 100%;
+			.moonwake-footer-brand {
+			min-width: 0;
+			}
 
-							grid-template-columns:
-							repeat(2, minmax(0, 1fr));
+			.moonwake-footer-nav {
+			width: 100%;
 
-							gap: 30px;
-							}
+			grid-template-columns:
+			repeat(2, minmax(0, 1fr));
 
-							.moonwake-footer-bottom {
-							align-items: flex-start;
+			gap: 30px;
+			}
 
-							flex-direction: column;
+			.moonwake-footer-bottom {
+			align-items: flex-start;
 
-							gap: 7px;
+			flex-direction: column;
 
-							padding: 17px 0;
-							}
-							}
+			gap: 7px;
 
+			padding: 17px 0;
+			}
+			}
 
-							@media (max-width: 450px) {
 
-							.book-header h1 {
-							font-size: 22px;
+			@media (max-width: 450px) {
 
-							letter-spacing: 2px;
-							}
+			.book-header h1 {
+			font-size: 22px;
 
-							.book-subtitle {
-							font-size: 9px;
+			letter-spacing: 2px;
+			}
 
-							letter-spacing: 2px;
-							}
+			.book-subtitle {
+			font-size: 9px;
 
-							.chapter-modal-header {
-							padding: 18px;
-							}
+			letter-spacing: 2px;
+			}
 
-							.chapter-modal-header h2 {
-							font-size: 16px;
-							}
+			.chapter-modal-header {
+			padding: 18px;
+			}
 
-							.chapter-close {
-							width: 32px;
-							height: 32px;
+			.chapter-modal-header h2 {
+			font-size: 16px;
+			}
 
-							flex-basis: 32px;
-							}
+			.chapter-close {
+			width: 32px;
+			height: 32px;
 
-							.chapter-text p {
-							font-size: 14px;
-							}
+			flex-basis: 32px;
+			}
 
-							.moonwake-footer-nav {
-							grid-template-columns: 1fr;
-							}
+			.chapter-text p {
+			font-size: 14px;
+			}
 
-							.footer-logo {
-							width: 52px;
-							height: 52px;
-							}
+			.moonwake-footer-nav {
+			grid-template-columns: 1fr;
+			}
 
-							.footer-name {
-							font-size: 10px;
-							}
-							}
+			.footer-logo {
+			width: 52px;
+			height: 52px;
+			}
 
-						</style>
+			.footer-name {
+			font-size: 10px;
+			}
+			}
 
-					</head>
+		</style>
+
+	</head>
 
 
 	<body>
@@ -1022,11 +1024,11 @@
 					BOOK-001
 				</p>
 
-				<h1>
+				<h1 data-i18n="placesBookTitle">
 					THE PLACES THAT SHOULDN'T EXIST
 				</h1>
 
-				<p class="book-subtitle">
+				<p class="book-subtitle" data-i18n="psychologicalHorror">
 					PSYCHOLOGICAL HORROR
 				</p>
 
@@ -1037,11 +1039,11 @@
 
 					<div class="book-status">
 
-						<span>
+						<span data-i18n="status">
 							STATUS
 						</span>
 
-						<strong>
+						<strong data-i18n="inDevelopment">
 							IN DEVELOPMENT
 						</strong>
 
@@ -1050,11 +1052,11 @@
 
 					<div class="book-status">
 
-						<span>
+						<span data-i18n="publication">
 							PUBLICATION
 						</span>
 
-						<strong>
+						<strong data-i18n="moonwakeEntertainment">
 							MOONWAKE ENTERTAINMENT
 						</strong>
 
@@ -1069,15 +1071,15 @@
 
 			<section class="book-section">
 
-				<p class="book-section-code">
+				<p class="book-section-code" data-i18n="bookInformation">
 					BOOK INFORMATION
 				</p>
 
-				<h2>
+				<h2 data-i18n="aboutTheBook">
 					ABOUT THE BOOK
 				</h2>
 
-				<p>
+				<p data-i18n="placesBookDescription">
 					A psychological horror novel following Silas through a town
 					that doesn't seem to follow the rules of reality.
 				</p>
@@ -1089,11 +1091,11 @@
 
 			<section class="book-section">
 
-				<p class="book-section-code">
+				<p class="book-section-code" data-i18n="record">
 					RECORD
 				</p>
 
-				<h2>
+				<h2 data-i18n="publicationDetails">
 					PUBLICATION DETAILS
 				</h2>
 
@@ -1102,7 +1104,7 @@
 
 					<div class="book-info-row">
 
-						<span>
+						<span data-i18n="bookId">
 							BOOK ID
 						</span>
 
@@ -1115,11 +1117,11 @@
 
 					<div class="book-info-row">
 
-						<span>
+						<span data-i18n="genre">
 							GENRE
 						</span>
 
-						<strong>
+						<strong data-i18n="psychologicalHorror">
 							PSYCHOLOGICAL HORROR
 						</strong>
 
@@ -1128,11 +1130,11 @@
 
 					<div class="book-info-row">
 
-						<span>
+						<span data-i18n="status">
 							STATUS
 						</span>
 
-						<strong>
+						<strong data-i18n="inDevelopment">
 							IN DEVELOPMENT
 						</strong>
 
@@ -1141,11 +1143,11 @@
 
 					<div class="book-info-row">
 
-						<span>
+						<span data-i18n="sample">
 							SAMPLE
 						</span>
 
-						<strong>
+						<strong data-i18n="chapter1Available">
 							CHAPTER 1 AVAILABLE
 						</strong>
 
@@ -1160,15 +1162,15 @@
 
 			<section class="book-section book-sample-section">
 
-				<p class="book-section-code">
+				<p class="book-section-code" data-i18n="readerAccess">
 					READER ACCESS
 				</p>
 
-				<h2>
+				<h2 data-i18n="readASample">
 					READ A SAMPLE
 				</h2>
 
-				<p class="book-sample-intro">
+				<p class="book-sample-intro" data-i18n="readFirstChapter">
 					READ THE FIRST CHAPTER OF THE PLACES THAT SHOULDN'T EXIST.
 				</p>
 
@@ -1176,6 +1178,7 @@
 					type="button"
 					class="read-chapter-button"
 					id="readChapterButton"
+					data-i18n="readChapter1"
             >
 					READ CHAPTER 1 →
 				</button>
@@ -1187,20 +1190,20 @@
 
 			<section class="book-section book-full-release">
 
-				<p class="book-section-code">
+				<p class="book-section-code" data-i18n="fullPublication">
 					FULL PUBLICATION
 				</p>
 
-				<h2>
+				<h2 data-i18n="theFullBook">
 					THE FULL BOOK
 				</h2>
 
-				<p>
+				<p data-i18n="fullBookDescription">
 					The complete story will become available when the book
 					is ready for publication.
 				</p>
 
-				<div class="release-status">
+				<div class="release-status" data-i18n="comingSoon">
 					COMING SOON
 				</div>
 
@@ -1454,7 +1457,7 @@
 
 		<div class="book-return">
 
-			<a href="library.html">
+			<a href="library.html" data-i18n="backToLibrary">
 				← BACK TO LIBRARY
 			</a>
 
@@ -1467,6 +1470,38 @@
 
 			<div class="moonwake-footer-main">
 
+				<div class="footer-language">
+
+					<div class="language-menu">
+
+						<button type="button" data-language="en">
+							🇺🇸 English
+						</button>
+
+						<button type="button" data-language="es">
+							🇪🇸 Español
+						</button>
+
+						<button type="button" data-language="ht">
+							🇭🇹 Kreyòl
+						</button>
+
+						<button type="button" data-language="zh">
+							🇨🇳 中文
+						</button>
+
+						<button type="button" data-language="pt">
+							🇧🇷 Português
+						</button>
+
+					</div>
+
+					<button type="button" class="language-button">
+						EN <span>›</span>
+					</button>
+
+				</div>
+
 
 				<div class="moonwake-footer-brand">
 
@@ -1476,19 +1511,19 @@
 						class="footer-logo"
                 />
 
-						<div class="footer-brand-text">
+					<div class="footer-brand-text">
 
-							<p class="footer-name">
-								MOONWAKE ENTERTAINMENT
-							</p>
+						<p class="footer-name">
+							MOONWAKE ENTERTAINMENT
+						</p>
 
-							<p class="footer-tagline">
-								CREATING WORLDS BEYOND THE MAP
-							</p>
-
-						</div>
+						<p class="footer-tagline">
+							CREATING WORLDS BEYOND THE MAP
+						</p>
 
 					</div>
+
+				</div>
 
 
 				<nav
@@ -1498,23 +1533,23 @@
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="explore">
 							EXPLORE
 						</h3>
 
-						<a href="about.html">
+						<a href="about.html" data-i18n="about">
 							About
 						</a>
 
-						<a href="news.html">
+						<a href="news.html" data-i18n="news">
 							News
 						</a>
 
-						<a href="archives.html">
+						<a href="archives.html" data-i18n="archives">
 							Archives
 						</a>
 
-						<a href="youtube-project.html">
+						<a href="youtube-project.html" data-i18n="youtube">
 							YouTube
 						</a>
 
@@ -1523,27 +1558,27 @@
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="projects">
 							PROJECTS
 						</h3>
 
-						<a href="projects.html">
+						<a href="projects.html" data-i18n="projects">
 							Projects
 						</a>
 
-						<a href="northreach-project.html">
+						<a href="northreach-project.html" data-i18n="northreach">
 							Northreach
 						</a>
 
-						<a href="library.html">
+						<a href="library.html" data-i18n="books">
 							Books
 						</a>
 
-						<a href="music-project.html">
+						<a href="music-project.html" data-i18n="music">
 							Music
 						</a>
 
-						<a href="smartpot-project.html">
+						<a href="smartpot-project.html" data-i18n="smartPot">
 							Smart Pot
 						</a>
 
@@ -1552,19 +1587,19 @@
 
 					<div class="footer-column">
 
-						<h3>
+						<h3 data-i18n="support">
 							SUPPORT
 						</h3>
 
-						<a href="donate.html">
+						<a href="donate.html" data-i18n="donate">
 							Donate
 						</a>
 
-						<a href="store.html">
+						<a href="store.html" data-i18n="store">
 							Store
 						</a>
 
-						<a href="feedback.html">
+						<a href="feedback.html" data-i18n="feedback">
 							Feedback
 						</a>
 
@@ -1572,14 +1607,14 @@
 							href="https://discord.gg/FWcHdbuw4"
 							target="_blank"
 							rel="noopener noreferrer"
-                    >
+						>
 							Discord
 						</a>
 
 						<a
-						 href="https://www.youtube.com/@MoonwakeEntertainment"
-						 target="_blank"
-						 rel="noopener noreferrer"
+							href="https://www.youtube.com/@MoonwakeEntertainment"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
 							YouTube
 						</a>
@@ -1597,7 +1632,7 @@
 					© 2026 Moonwake Entertainment
 				</p>
 
-				<p>
+				<p data-i18n="tagline">
 					CREATING WORLDS BEYOND THE MAP
 				</p>
 
@@ -1645,4 +1680,3 @@
 	</body>
 
 </html>
-
